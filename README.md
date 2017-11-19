@@ -135,7 +135,7 @@ mkdir -p ~/.vim/colors/
 As for the plugin, you can use your favourite plugin manager. With [vim-plug](https://github.com/junegunn/vim-plug) add the following line to your `.vimrc`:
 
 ```vim
-Plug "protesilaos/tempus-vim"
+Plug "protesilaos/tempus-themes-vim"
 ```
 
 Then execute the plugin manager's command to update the plugin files.
