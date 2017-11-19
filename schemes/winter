@@ -1,0 +1,69 @@
+# vi: ft=sh
+
+# =============================================================================
+# scheme: Winter
+# scheme family: Tempus
+# description: Dark theme with a palette inspired by winter nights at the city
+# author: Protesilaos Stavrou (https://protesilaos.com/)
+# =============================================================================
+
+# This dark theme only uses the col0 and col8 values for backgrounds
+# All colours have a contrast ratio of 4.50:1 against col0 and col8 (WCAG AA)
+# Exception is col8 on col0 or vice versa (these two are mutually exclusive)
+
+# Colour values
+# ------------------------------------------------------------------------------
+col0=202427       # black variant
+col1=ca7162       # red variant
+col2=589584       # green variant
+col3=988b21       # yellow variant
+col4=2b92c8       # blue variant
+col5=b572b6       # magenta variant
+col6=4f91b5       # cyan variant
+col7=888a8a       # white variant
+col8=1b2431       # bright black variant
+col9=c47818       # bright red variant
+col10=2c9a81      # bright green variant
+col11=a2864b      # bright yellow variant
+col12=6987d7      # bright blue variant
+col13=987dc2      # bright magenta variant
+col14=1f96b0      # bright cyan variant
+col15=798ba5      # bright white variant
+
+# Terminal base values
+# ------------------------------------------------------------------------------
+# Palette values corresponding to terminal codes followed by termcol description
+ccol0=0           # black
+ccol1=1           # red
+ccol2=2           # green
+ccol3=3           # yellow
+ccol4=4           # blue
+ccol5=5           # magenta
+ccol6=6           # cyan
+ccol7=7           # white
+ccol8=8           # brblack
+ccol9=9           # brred
+ccol10=10         # brgreen
+ccol11=11         # bryellow
+ccol12=12         # brblue
+ccol13=13         # brmagenta
+ccol14=14         # brcyan
+ccol15=15         # brwhite
+
+# Base values
+# ------------------------------------------------------------------------------
+# Used for colour mapping in the templates
+colvr=dark        # Variant (light or dark)
+colbg=$col0       # Background
+colbgalt=$col8    # Background alternative
+colfg=$col15      # Foreground
+colfgalt=$col7    # Foreground alternative
+colcr=$col15      # Cursor
+
+# The following are specific to the Vim template
+# They should always reflect the above base values
+ccolbg=$ccol0     # Console Background
+ccolbgalt=$ccol8  # Console Background alternative
+ccolfg=$ccol15    # Console Foreground
+ccolfgalt=$ccol7  # Console Foreground alternative
+ccolcr=$ccol15    # Console Cursor

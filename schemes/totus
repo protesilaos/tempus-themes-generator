@@ -1,0 +1,69 @@
+# vi: ft=sh
+
+# =============================================================================
+# scheme: Totus
+# scheme family: Tempus
+# description: Light theme for prose or for coding in an open space
+# author: Protesilaos Stavrou (https://protesilaos.com/)
+# =============================================================================
+
+# This light theme only uses the col15 and col7 values for backgrounds
+# All colours have a contrast ratio of 7.00:1 against col15 and col7 (WCAG AAA)
+# Exception is col7 on col15 or vice versa (these two are mutually exclusive)
+
+# Colour values
+# ------------------------------------------------------------------------------
+col0=52505e        # black variant
+col1=a01c10        # red variant
+col2=0b5d46        # green variant
+col3=545422        # yellow variant
+col4=1c4f9f        # blue variant
+col5=942166        # magenta variant
+col6=185870        # cyan variant
+col7=ecf3f3        # white variant
+col8=575050        # bright black variant
+col9=913210        # bright red variant
+col10=2a5d08       # bright green variant
+col11=774611       # bright yellow variant
+col12=5440a7       # bright blue variant
+col13=8d0e9b       # bright magenta variant
+col14=0e577b       # bright cyan variant
+col15=f4f1f0       # bright white variant
+
+# Terminal values
+# ------------------------------------------------------------------------------
+# Palette values corresponding to terminal codes followed by termcol description
+ccol0=0            # black
+ccol1=1            # red
+ccol2=2            # green
+ccol3=3            # yellow
+ccol4=4            # blue
+ccol5=5            # magenta
+ccol6=6            # cyan
+ccol7=7            # white
+ccol8=8            # brblack
+ccol9=9            # brred
+ccol10=10          # brgreen
+ccol11=11          # bryellow
+ccol12=12          # brblue
+ccol13=13          # brmagenta
+ccol14=14          # brcyan
+ccol15=15          # brwhite
+
+# Base values
+# ------------------------------------------------------------------------------
+# Used for colour mapping in the templates
+colvr=light        # Variant (light or dark)
+colbg=$col15       # Background
+colbgalt=$col7     # Background alternative
+colfg=$col0        # Foreground
+colfgalt=$col8     # Foreground alternative
+colcr=$col0        # Cursor
+
+# The following are specific to the Vim template
+# They should always reflect the above base values
+ccolbg=$ccol15     # Console Background
+ccolbgalt=$ccol7   # Console Background alternative
+ccolfg=$ccol0      # Console Foreground
+ccolfgalt=$ccol8   # Console Foreground alternative
+ccolcr=$ccol0      # Console Cursor

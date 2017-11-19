@@ -1,0 +1,140 @@
+" vi: ft=vim
+
+" Name: Tempus $scheme
+" Author: Protesilaos Stavrou <https://protesilaos.com>
+
+set background=$colvr
+hi clear
+if exists("syntax_on")
+  syntax reset
+endif
+let g:colors_name = "tempus_${scheme}"
+
+" General
+" -----------------
+
+" NOTE the ctermbg=none is for terminals with transparency
+hi Normal guibg=#${colbg} guifg=#${colfg} ctermbg=none ctermfg=$ccolfg
+hi Visual guibg=#${colfg} guifg=#${colbg} ctermbg=$ccolfg ctermfg=$ccolbg
+hi Search gui=underline,bold guibg=#${colfg} guifg=#${colbg} cterm=underline,bold, ctermbg=$ccolfg ctermfg=$ccolbg
+hi IncSearch gui=underline,bold guibg=#${colfgalt} guifg=#${colbg} term=none cterm=bold ctermbg=$ccolfgalt ctermfg=$ccolbg
+
+hi StatusLine gui=none,bold guibg=#${colfg} guifg=#${colbg} cterm=none,bold ctermbg=$ccolfg ctermfg=$ccolbg
+hi StatusLineNC gui=none guibg=#${colbgalt} guifg=#${colfgalt} cterm=none ctermbg=$ccolbgalt ctermfg=$ccolfgalt
+hi StatusLineTerm gui=none,bold guibg=#${col2} guifg=#${colbg} cterm=none,bold ctermbg=$ccol2 ctermfg=$ccolbg
+hi StatusLineTermNC gui=none guibg=#${colbgalt} guifg=#${col2} cterm=none ctermbg=$ccolbgalt ctermfg=$ccol2
+
+hi VertSplit gui=none cterm=none
+hi TabLine gui=none guibg=#${colbgalt} guifg=#${colfgalt} cterm=none ctermbg=$ccolbgalt ctermfg=$ccolfgalt
+hi TabLineSel gui=none guibg=#${col2} guifg=#${colbg} cterm=none ctermbg=$ccol2 ctermfg=$ccolbg
+hi TabLineFill gui=none cterm=none
+
+hi Comment gui=italic guifg=#${colfgalt} cterm=italic ctermfg=$ccolfgalt
+hi Todo gui=bold guibg=#${colbgalt} guifg=#${col11} cterm=bold ctermbg=$ccolbgalt ctermfg=$ccol11
+
+hi Warning gui=none guibg=#${col3} guifg=#${colbg} cterm=none ctermbg=$ccol3 ctermfg=$ccolbg
+hi WarningMsg gui=none guibg=#${col3} guifg=#${colbg} cterm=none ctermbg=$ccol3 ctermfg=$ccolbg
+hi Error gui=none guibg=#${col1} guifg=#${colbg} cterm=none ctermbg=$ccol1 ctermfg=$ccolbg
+hi ErrorMsg gui=none guibg=#${col1} guifg=#${colbg} cterm=none ctermbg=$ccol1 ctermfg=$ccolbg
+
+hi MatchParen gui=underline guibg=#${col13} guifg=#${colbg} cterm=underline ctermbg=$ccol13 ctermfg=$ccolbg
+
+hi ToolbarLine guibg=#${colfgalt} guifg=#${colbg} term=none ctermbg=$ccolfgalt ctermfg=$ccolbg
+hi ToolbarButton gui=bold guibg=#${colfgalt} guifg=#${colbg} term=none cterm=bold ctermbg=$ccolfgalt ctermfg=$ccolbg
+
+hi WildMenu guibg=#${colbg} guifg=#${colfg} term=standout ctermbg=$ccolbg ctermfg=$ccolfg
+
+hi Terminal guibg=#${colbg} guifg=#${colfg} term=none ctermbg=$ccolbg ctermfg=$ccolfg
+
+" Constructs
+" -----------------
+hi Constant guifg=#${col4} ctermfg=$ccol4
+hi Number guifg=#${col4} ctermfg=$ccol4
+hi Float guifg=#${col4} ctermfg=$ccol4
+hi String guifg=#${col12} ctermfg=$ccol12
+
+hi Function guifg=#${col5} ctermfg=$ccol5
+hi Identifier guifg=#${col13} term=none ctermfg=$ccol13
+hi Label guifg=#${col5} ctermfg=$ccol5
+hi Tag guifg=#${col5} ctermfg=$ccol5
+hi Keyword gui=bold guifg=#${col13} gui=bold ctermfg=$ccol13
+
+hi Character gui=bold guifg=#${col14} cterm=bold ctermfg=$ccol14
+
+hi Type gui=none,bold guifg=#${col6} term=none cterm=none,bold ctermfg=$ccol6
+hi Boolean guifg=#${col6} ctermfg=$ccol6
+hi StorageClass guifg=#${col6} ctermfg=$ccol6
+hi Structure guifg=#${col6} ctermfg=$ccol6
+hi Typedef gui=bold guifg=#${col14} cterm=bold ctermfg=$ccol14
+
+hi Conditional gui=bold guifg=#${col2} cterm=bold ctermfg=$ccol2
+hi Statement gui=none guifg=#${col10} cterm=none ctermfg=$ccol10
+hi Repeat gui=bold guifg=#${col10} cterm=bold ctermfg=$ccol10
+hi Operator gui=bold guifg=#${colfg} cterm=bold ctermfg=$ccolfg
+hi Exception gui=bold guifg=#${col1} cterm=bold ctermfg=$ccol1
+
+hi Preproc gui=none guifg=#${col9} term=none cterm=none ctermfg=$ccol9
+hi PreCondit gui=bold guifg=#${col9} cterm=bold ctermfg=$ccol9
+hi Macro gui=bold guifg=#${col9} cterm=bold ctermfg=$ccol9
+hi Include guifg=#${col9} ctermfg=$ccol9
+hi Define guifg=#${col9} ctermfg=$ccol9
+
+hi Title gui=bold guifg=#${col14} cterm=bold ctermfg=$ccol14
+
+hi Special gui=bold guifg=#${col11} term=none cterm=bold ctermfg=$ccol11
+hi SpecialKey guifg=#${col11} ctermfg=$ccol11
+hi SpecialChar gui=bold guifg=#${col11} cterm=bold ctermfg=$ccol11
+
+hi Delimeter gui=bold guifg=#${col5} cterm=bold ctermfg=$ccol5
+hi Delimiter gui=bold guifg=#${col5} cterm=bold ctermfg=$ccol5
+hi SpecialComment gui=bold guifg=#${col5} cterm=bold ctermfg=$ccol5
+
+hi Debug guifg=#${col13} ctermfg=$ccol13
+
+" Other
+" -----------------
+hi LineNr guibg=#${colbgalt} guifg=#${colfgalt} term=none ctermbg=$ccolbgalt ctermfg=$ccolfgalt
+hi Cursor guibg=#${colfg} guifg=#${colbg} ctermbg=$ccolfg ctermfg=$ccolbg
+hi CursorLine gui=none guibg=NONE term=none cterm=none ctermbg=none
+hi CursorColumn gui=none guibg=#${colbgalt} term=none cterm=none ctermbg=$ccolbgalt
+hi CursorLineNr gui=bold guibg=#${colfgalt} guifg=#${colbg} cterm=bold ctermbg=$ccolfgalt ctermfg=$ccolbg
+hi ColorColumn guibg=#${colbgalt} guifg=#${colfg} term=none ctermbg=$ccolbgalt ctermfg=$ccolfg
+
+hi Folded guibg=#${colbgalt} guifg=#${colfgalt} ctermbg=$ccolbgalt ctermfg=$ccolfgalt
+hi FoldColumn guibg=#${colbgalt} guifg=#${colfgalt} ctermbg=$ccolbgalt ctermfg=$ccolfgalt
+
+hi NonText gui=bold guibg=NONE guifg=#${colfgalt} cterm=bold ctermbg=none ctermfg=$ccolfgalt
+
+hi Directory gui=none guifg=#${col2} term=none cterm=none ctermfg=$ccol2
+hi Question gui=bold guifg=#${col11} cterm=bold ctermfg=$ccol11
+hi MoreMsg guifg=#${col10} ctermfg=$ccol10
+hi ModeMsg gui=bold guifg=#${col2} cterm=bold ctermfg=$ccol2
+
+hi VimOption guifg=#${col5} ctermfg=$ccol5
+hi VimGroup guifg=#${col5} ctermfg=$ccol5
+
+hi Underlined gui=none,bold guifg=#${colfg} cterm=underline,bold ctermfg=$ccolfg
+hi Ignore guibg=#${colbgalt} guifg=#${colfgalt} ctermbg=$ccolbgalt ctermfg=$ccolfgalt
+hi Conceal guibg=#${colfgalt} guifg=#${colbgalt} ctermbg=$ccolfgalt ctermfg=$ccolbgalt
+
+hi SpellBad guibg=#${col1} guifg=#${colbg} ctermbg=$ccol1 ctermfg=$ccolbg
+hi SpellCap guibg=#${col3} guifg=#${colbg} ctermbg=$ccol3 ctermfg=$ccolbg
+hi SpellRare guibg=#${col13} guifg=#${colbg} ctermbg=$ccol13 ctermfg=$ccolbg
+hi SpellLocal guibg=#${col14} guifg=#${colbg} ctermbg=$ccol14 ctermfg=$ccolbg
+
+hi Pmenu guibg=#${colfgalt} guifg=#${colbgalt} ctermbg=$ccolfgalt ctermfg=$ccolbgalt
+hi PmenuSel guibg=#${colbgalt} guifg=#${col2} ctermbg=$ccolbgalt ctermfg=$ccol2
+hi PmenuSbar guibg=#${colfg} ctermbg=$ccolfg
+hi PmenuThumb guibg=#${colbgalt} ctermbg=$ccolbgalt
+
+" Diffs
+" -----------------
+hi DiffAdd gui=bold guibg=#${col2} guifg=#${colbg} cterm=bold ctermbg=$ccol10 ctermfg=$ccolbg
+hi DiffDelete gui=none guibg=#${col1} guifg=#${colbg} cterm=none ctermbg=$ccol9 ctermfg=$ccolbg
+hi DiffChange gui=bold guibg=#${colbgalt} guifg=#${colfgalt} cterm=bold ctermbg=$ccolbgalt ctermfg=$ccolfgalt
+hi DiffText gui=bold guibg=#${colbgalt} guifg=#${col9} cterm=bold ctermbg=$ccolbgalt ctermfg=$ccol1
+
+hi diffAdded guifg=#${col2} ctermfg=$ccol2
+hi diffRemoved guifg=#${col1} ctermfg=$ccol1
+hi diffNewFile gui=none guifg=#${col4} ctermfg=$ccol4
+hi diffFile gui=none guifg=#${col3} cterm=none ctermfg=$ccol3

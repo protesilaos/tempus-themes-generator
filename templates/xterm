@@ -1,0 +1,22 @@
+! vi: ft=xdefaults
+! Colour scheme: Tempus $scheme
+! By Protesilaos Stavrou
+xterm*background: #${colbg}
+xterm*foreground: #${colfg}
+xterm*cursorColor: #${colfg}
+xterm*color0: #${col0}
+xterm*color1: #${col1}
+xterm*color2: #${col2}
+xterm*color3: #${col3}
+xterm*color4: #${col4}
+xterm*color5: #${col5}
+xterm*color6: #${col6}
+xterm*color7: #${col7}
+xterm*color8: #${col8}
+xterm*color9: #${col9}
+xterm*color10: #${col10}
+xterm*color11: #${col11}
+xterm*color12: #${col12}
+xterm*color13: #${col13}
+xterm*color14: #${col14}
+xterm*color15: #${col15}

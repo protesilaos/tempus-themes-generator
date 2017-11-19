@@ -1,0 +1,22 @@
+! vi: ft=xdefaults
+! Colour scheme: Tempus $scheme
+! By Protesilaos Stavrou
+URxvt*background: #${colbg}
+URxvt*foreground: #${colfg}
+URxvt*cursorColor: #${colcr}
+URxvt*color0: #${col0}
+URxvt*color1: #${col1}
+URxvt*color2: #${col2}
+URxvt*color3: #${col3}
+URxvt*color4: #${col4}
+URxvt*color5: #${col5}
+URxvt*color6: #${col6}
+URxvt*color7: #${col7}
+URxvt*color8: #${col8}
+URxvt*color9: #${col9}
+URxvt*color10: #${col10}
+URxvt*color11: #${col11}
+URxvt*color12: #${col12}
+URxvt*color13: #${col13}
+URxvt*color14: #${col14}
+URxvt*color15: #${col15}
