@@ -162,6 +162,10 @@ colorscheme tempus_winter
 
 Refer to the [CHANGELOG.md](https://github.com/protesilaos/tempus-themes-generator/gblob/master/CHANGELOG.md)
 
+## Additional resources
+
+For all available ports, refer to the main [Tempus themes repo](https://github.com/protesilaos/tempus-themes).
+
 ## License
 
 GNU General Public License Version 3. 
