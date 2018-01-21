@@ -4,6 +4,7 @@
 *background: #${colbg}
 *foreground: #${colfg}
 *cursorColor: #${colcr}
+*cursorColor2: #${colcr2}
 *color0: #${col0}
 *color1: #${col1}
 *color2: #${col2}
