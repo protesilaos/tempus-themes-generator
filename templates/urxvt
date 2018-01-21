@@ -4,6 +4,7 @@
 URxvt*background: #${colbg}
 URxvt*foreground: #${colfg}
 URxvt*cursorColor: #${colcr}
+URxvt*cursorColor2: #${colcr2}
 URxvt*color0: #${col0}
 URxvt*color1: #${col1}
 URxvt*color2: #${col2}

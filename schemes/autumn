@@ -59,6 +59,7 @@ colbgalt=$col8    # Background alternative
 colfg=$col15      # Foreground
 colfgalt=$col7    # Foreground alternative
 colcr=$col15      # Cursor
+colcr2=$col0      # Cursor text
 
 # The following are specific to the Vim template
 # They should always reflect the above base values
