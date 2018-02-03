@@ -1,0 +1,22 @@
+{
+    "name": "tempus-${scheme}",
+    "displayName": "tempus-${scheme}",
+    "description": "",
+    "version": "0.0.1",
+    "publisher": "koffiekop",
+    "engines": {
+        "vscode": "^1.19.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Tempus ${scheme}",
+                "uiTheme": "vs",
+                "path": "./themes/tempus-${scheme}-color-theme.json"
+            }
+        ]
+    }
+}
