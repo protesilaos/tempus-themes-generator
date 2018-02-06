@@ -11,6 +11,15 @@
 # All colours have a contrast ratio of 7.00:1 against col15 and col7 (WCAG AAA)
 # Exception is col7 on col15 or vice versa (these two are mutually exclusive)
 
+# Meta data
+# ------------------------------------------------------------------------------
+tempus_theme_name='Totus'
+tempus_theme_name_full='Tempus Totus'
+tempus_theme_name_slug='totus'
+tempus_theme_name_slug_full='tempus-totus'
+tempus_theme_description='Light theme for prose or for coding in an open space (WCAG AAA compliant)'
+tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
+
 # Colour values
 # ------------------------------------------------------------------------------
 col0=52505e        # black variant

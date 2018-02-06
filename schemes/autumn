@@ -11,6 +11,15 @@
 # All colours have a contrast ratio of 4.50:1 against col0 and col 8 (WCAG AA)
 # Exception is col8 on col0 or vice versa (these two are mutually exclusive)
 
+# Meta data
+# ------------------------------------------------------------------------------
+tempus_theme_name='Autumn'
+tempus_theme_name_full='Tempus Autumn'
+tempus_theme_name_slug='autumn'
+tempus_theme_name_slug_full='tempus-autumn'
+tempus_theme_description='Dark theme with a palette inspired by earthly colours (WCAG AA compliant)'
+tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
+
 # Colour values
 # ------------------------------------------------------------------------------
 col0=322622       # black variant
@@ -52,6 +61,7 @@ ccol15=15         # brwhite
 
 # Base values
 # ------------------------------------------------------------------------------
+
 # Used for colour mapping in the templates
 colvr=dark        # Variant (light or dark)
 colbg=$col0       # Background

@@ -11,6 +11,15 @@
 # All colours have a contrast ratio of 7.00:1 against col0 and col8 (WCAG AAA)
 # Exception is col8 on col0 or vice versa (these two are mutually exclusive)
 
+# Meta data
+# ------------------------------------------------------------------------------
+tempus_theme_name='Future'
+tempus_theme_name_full='Tempus Future'
+tempus_theme_name_slug='future'
+tempus_theme_name_slug_full='tempus-future'
+tempus_theme_description='Dark theme with colours inspired by concept art of outer space (WCAG AAA compliant)'
+tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
+
 # Colour values
 # ------------------------------------------------------------------------------
 col0=18161d       # black variant

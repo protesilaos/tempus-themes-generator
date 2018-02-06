@@ -11,6 +11,15 @@
 # All colours have a contrast ratio of 4.50:1 against col0 and col8 (WCAG AA)
 # Exception is col8 on col0 or vice versa (these two are mutually exclusive)
 
+# Meta data
+# ------------------------------------------------------------------------------
+tempus_theme_name='Summer'
+tempus_theme_name_full='Tempus Summer'
+tempus_theme_name_slug='summer'
+tempus_theme_name_slug_full='tempus-summer'
+tempus_theme_description='Dark theme with colours inspired by summer evenings by the sea (WCAG AA compliant)'
+tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
+
 # Colour values
 # ------------------------------------------------------------------------------
 col0=293345       # black variant

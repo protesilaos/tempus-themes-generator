@@ -12,6 +12,15 @@
 # All bright values have a contrast ratio of 5.50:1 against col0 and col8 (WCAG AA)
 # Exception is col8 on col0 or vice versa (these two are mutually exclusive)
 
+# Meta data
+# ------------------------------------------------------------------------------
+tempus_theme_name='Warp'
+tempus_theme_name_full='Tempus Warp'
+tempus_theme_name_slug='warp'
+tempus_theme_name_slug_full='tempus-warp'
+tempus_theme_description='Dark theme with a vibrant palette (WCAG AA compliant)'
+tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
+
 # Colour values
 # ------------------------------------------------------------------------------
 col0=141a19       # black variant

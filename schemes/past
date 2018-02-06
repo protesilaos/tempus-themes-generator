@@ -11,6 +11,15 @@
 # All colours have a contrast ratio of 4.50:1 against col15 and col7 (WCAG AA)
 # Exception is col7 on col15 or vice versa (these two are mutually exclusive)
 
+# Meta data
+# ------------------------------------------------------------------------------
+tempus_theme_name='Past'
+tempus_theme_name_full='Tempus Past'
+tempus_theme_name_slug='past'
+tempus_theme_name_slug_full='tempus-past'
+tempus_theme_description='Light theme inspired by old vaporwave concept art (WCAG AA compliant)'
+tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
+
 # Colour values
 # ------------------------------------------------------------------------------
 col0=63606b        # black variant

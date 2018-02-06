@@ -11,6 +11,15 @@
 # All colours have a contrast ratio of 4.50:1 against col0 and col8 (WCAG AA)
 # Exception is col8 on col0 or vice versa (these two are mutually exclusive)
 
+# Meta data
+# ------------------------------------------------------------------------------
+tempus_theme_name='Winter'
+tempus_theme_name_full='Tempus Winter'
+tempus_theme_name_slug='winter'
+tempus_theme_name_slug_full='tempus-winter'
+tempus_theme_description='Dark theme with a palette inspired by winter nights at the city (WCAG AA compliant)'
+tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
+
 # Colour values
 # ------------------------------------------------------------------------------
 col0=202427       # black variant
