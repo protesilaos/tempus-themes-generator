@@ -2,6 +2,12 @@
 
 *Latest version is at the top. Versioning follows semver specs, with the date appended in the form of YYMMDD.*
 
+## 0.4.0.20180206
+
+Added a template for gtksourceview-3.0. This is the tool that is used by applications running on the GTK3 widget toolkit to highlight code syntax. Some common apps are Gedit (GNOME default), Pluma (MATE default), and Xed (Linux Mint Cinnamon default).
+
+All schemes now contain a set of variables that contain their meta data, such as full name, description, etc.
+
 ## 0.3.0.20180121
 
 Added Tempus Warp (dark theme, WCAG AA compliant)
