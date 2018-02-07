@@ -12,7 +12,7 @@ The generator consists of a bash script which parses the sets of variables of ea
     - Examples
     - File type extensions
 - Applying the themes
-    - Template-specific repos
+    - Template-specific repositories
     - GTK 3 Source View
     - URxvt (Rxvt-Unicode)
     - Xterm
@@ -226,7 +226,7 @@ Refer to the [CHANGELOG.md](https://github.com/protesilaos/tempus-themes-generat
 
 ## Additional resources
 
-For all available ports, refer to the main [Tempus themes repo](https://github.com/protesilaos/tempus-themes).
+For a hub with all available ports, see the main [Tempus themes repo](https://github.com/protesilaos/tempus-themes).
 
 ## License
 
