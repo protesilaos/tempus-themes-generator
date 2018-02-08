@@ -51,7 +51,7 @@ These are the commands for finding the available arguments:
 # List `scheme` options
 ls schemes
 
-# List `template options
+# List `template` options
 ls templates
 ```
 
@@ -63,7 +63,7 @@ Print the `winter` theme for `vim` to the terminal output:
 ./tempus-themes-generator.sh winter vim
 ```
 
-Directly create a new file containing the output and place it on the `~/Desktop`:
+Directly create a new file named `tempus_winter.vim` containing the output and place it on the `~/Desktop`:
 
 ```sh
 ./tempus-themes-generator.sh winter vim > ~/Desktop/tempus_winter.vim
@@ -72,12 +72,12 @@ Directly create a new file containing the output and place it on the `~/Desktop`
 ### File type extensions for each template
 
 ```
-gtksourceview3 (.xml)
-urvxt (.Xcolors, .Xresources, .Xdefaults)
+gtksourceview3 = .xml
+urvxt = .Xcolors, .Xresources, .Xdefaults
 vim = .vim
-xcolors = (.Xcolors, .Xresources, .Xdefaults)
+xcolors = .Xcolors, .Xresources, .Xdefaults
 xfce4-terminal = .theme
-xterm = (.Xcolors, .Xresources, .Xdefaults)
+xterm = .Xcolors, .Xresources, .Xdefaults
 yaml = .yml, .yaml
 ```
 
