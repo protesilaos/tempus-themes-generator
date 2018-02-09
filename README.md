@@ -14,6 +14,7 @@ The generator consists of a bash script which parses the sets of variables of ea
 - Applying the themes
     - Template-specific repositories
     - GTK 3 Source View
+    - Tilix
     - URxvt (Rxvt-Unicode)
     - Xterm
     - Xfce4 terminal
@@ -73,6 +74,7 @@ Directly create a new file named `tempus_winter.vim` containing the output and p
 
 ```
 gtksourceview3 = .xml
+tilix = .json
 urvxt = .Xcolors, .Xresources, .Xdefaults
 vim = .vim
 xcolors = .Xcolors, .Xresources, .Xdefaults
@@ -91,11 +93,12 @@ Each application uses a different set of conventions. Below are some tried and t
 
 Before trying to do things manually, you may want to check out the following repos with pre-built ports. Some of these even have packages for Arch Linux (through the Arch User Repository).
 
-- [Tempus themes **gtksourceview3**](https://github.com/protesilaos/tempus-themes-gtksourceview3)
-- [Tempus themes **urxvt**](https://github.com/protesilaos/tempus-themes-urxvt)
-- [Tempus themes **vim plugin**](https://github.com/protesilaos/tempus-themes-vim)
-- [Tempus themes **xfce4-terminal**](https://github.com/protesilaos/tempus-themes-xfce4-terminal)
-- [Tempus themes **xterm**](https://github.com/protesilaos/tempus-themes-xterm)
+- [Tempus themes **GTK3 Source View**](https://github.com/protesilaos/tempus-themes-gtksourceview3)
+- [Tempus themes **Tilix**](https://github.com/protesilaos/tempus-themes-tilix)
+- [Tempus themes **URxvt**](https://github.com/protesilaos/tempus-themes-urxvt)
+- [Tempus themes **Vim plugin**](https://github.com/protesilaos/tempus-themes-vim)
+- [Tempus themes **Xfce4 terminal**](https://github.com/protesilaos/tempus-themes-xfce4-terminal)
+- [Tempus themes **Xterm**](https://github.com/protesilaos/tempus-themes-xterm)
 
 ### GTK 3 Source View
 
@@ -118,7 +121,26 @@ mkdir -p ~/.local/share/gtksourceview-3.0/styles/
 
 The theme will then be available from the supported app's preferences window.
 
-### URxvt (RXVT-Unicode)
+### Tilix
+
+Tilix theme files can be located in either of two places:
+
+- At `/usr/share/tilix/schemes/` which makes them accessible to all users (requires root privileges).
+- Or `~/.config/tilix/schemes/` for use by the current user (directory path needs to be created if it does not already exist).
+
+Choose whatever option suits your needs. The following commands use the latter as an example.
+
+```sh
+# Create destination directory if it does not already exist
+mkdir -p ~/.config/tilix/schemes/
+
+# Generate the theme and place it in the created directory
+./tempus-themes-generator.sh winter tilix > ~/.config/tilix/schemes/tempus_winter.json
+```
+
+The theme will then be available from the application's preferences window, in the profiles' section (under the colours tab).
+
+### URxvt (Rxvt-Unicode)
 
 URxvt saves colour values in either of two places. The most common use case is within the `~/.Xresources`. Since that file can contain all sorts of configurations, it is best to *append* the output of the `tempus-themes-generator.sh` rather than overwrite its contents.
 
