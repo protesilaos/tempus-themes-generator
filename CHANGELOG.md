@@ -2,6 +2,12 @@
 
 *Latest version is at the top. Versioning follows semver specs, with the date appended in the form of YYMMDD.*
 
+*NOTE. No release tags are made available. While this script 'works' for my limited use case, it is not tested for widespread use.*
+
+## 0.5.0.20180209
+
+Added template for Tilix (formerly Terminix). This is a modern terminal emulator, targetted at GNOME users.
+
 ## 0.4.0.20180206
 
 Added a template for gtksourceview-3.0. This is the tool that is used by applications running on the GTK3 widget toolkit to highlight code syntax. Some common apps are Gedit (GNOME default), Pluma (MATE default), and Xed (Linux Mint Cinnamon default).
