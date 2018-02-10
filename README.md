@@ -245,11 +245,11 @@ colorscheme tempus_winter
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/protesilaos/tempus-themes-generator/gblob/master/CONTRIBUTING.md)
+See [CONTRIBUTING.md](https://github.com/protesilaos/tempus-themes-generator/blob/master/CONTRIBUTING.md)
 
 ## Changelog
 
-Refer to the [CHANGELOG.md](https://github.com/protesilaos/tempus-themes-generator/gblob/master/CHANGELOG.md)
+Refer to the [CHANGELOG.md](https://github.com/protesilaos/tempus-themes-generator/blob/master/CHANGELOG.md)
 
 ## Additional resources
 
