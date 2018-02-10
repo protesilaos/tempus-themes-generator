@@ -1,6 +1,6 @@
 # Contributing to the Tempus themes project
 
-*Tl;dr: See [What contributions to make](#what-contributions-to-make)*
+*tl;dr: see [What contributions to make](#what-contributions-to-make)*
 
 Thank you for your willingness to help! 
 
@@ -10,7 +10,7 @@ First of all, an overview of this project's design to help you understand the wo
 
 1. The `tempus-themes-generator` ([this repo](https://github.com/protesilaos/tempus-themes-generator)) is the tool that is used to build the Tempus themes. All contributions to the underlying code should be made here (more in the following sections).
 2. The [Tempus Themes](https://github.com/protesilaos/tempus-themes) is the main end-user-facing repository. It contains all the files pertaining to the Tempus themes, as well as general information on the project as a whole.
-3. For each of the available templates there is a dedicated repository on GitHub (exceptions are generic data files, such as YAML ports). Their naming follows this pattern: `tempus-themes-[NAME OF TEMPLATE]`. For example, `tempus-themes-xfce4-terminal` contains files specific to the `xfce4-terminal`. Where appropriate, these repositories also function as the source code for GNU/Linux distro packages. As an Arch Linux user myself, I [currently maintain](https://aur.archlinux.org/packages/?SeB=m&K=protesilaos) such packages on the Arch User Repository. Links to these repos are included in the [README.md](https://github.com/protesilaos/tempus-themes-generator/blob/master/README.md). 
+3. For each of the available templates there is a dedicated repository on GitHub (exceptions are generic data files, such as YAML ports). Their naming convention follows this pattern: `tempus-themes-[NAME OF TEMPLATE]`. For example, `tempus-themes-xfce4-terminal` contains files specific to the `xfce4-terminal`. Where appropriate, these repositories also function as the source code for GNU/Linux distro packages. As an Arch Linux user myself, I [currently maintain](https://aur.archlinux.org/packages/?SeB=m&K=protesilaos) such packages on the Arch User Repository. Links to these repos are included in the [README.md](https://github.com/protesilaos/tempus-themes-generator/blob/master/README.md). 
 
 ## How the generator is designed
 
@@ -44,9 +44,9 @@ Areas I have identified:
 
 Areas where help is needed:
 
-1. Improving existing templates. Maybe there are some styles that do not work properly, or areas that could be done better.
+1. Improving existing templates. Maybe there are some styles that do not work properly, or things that could be done better.
 2. Submit new templates! Some programs I have in mind are Atom, VS Studio Code, Sublime Text, Emacs, GNOME Terminal, MATE Terminal, Konsole, Kate, Kwrite.
-    - Can we keep the same colour mapping as the Vim template? The idea is that themes should feel more-or-less "the same" when moving from one app to another.
+    - Can we keep the same colour mapping as the Vim template? The idea is that themes should feel 'identical' when moving from one app to another (obviously that is not 100% possible due to the constraints or specific functionality of each program).
     - Complex templates are also welcome. For example, we may want to build a port for Atom, which would encompass its `package.json` and its main styling files. The naming pattern should be `templates/atom-[DIRECTORY if not root]-[FILE if there are multiple that are needed]`, such as `templates/atom-package`, `templates/atom-index`, `templates/atom-styles-base`, `templates/atom-styles-colors`.
     - Merging into `master` will only be done once these have been thoroughly tested.
 
