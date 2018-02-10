@@ -17,6 +17,7 @@ tempus_theme_name='Totus'
 tempus_theme_name_full='Tempus Totus'
 tempus_theme_name_slug='totus'
 tempus_theme_name_slug_full='tempus-totus'
+tempus_theme_name_slug_full_underscore='tempus_totus'
 tempus_theme_description='Light theme for prose or for coding in an open space (WCAG AAA compliant)'
 tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
 

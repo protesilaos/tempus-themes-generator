@@ -1,5 +1,5 @@
 {
-    "name": "Tempus ${tempus_theme_name}",
+    "name": "${tempus_theme_name_full}",
     "comment": "${tempus_theme_description}",
     "foreground-color": "#${colfg}",
     "background-color": "#${colbg}",

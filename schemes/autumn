@@ -17,6 +17,7 @@ tempus_theme_name='Autumn'
 tempus_theme_name_full='Tempus Autumn'
 tempus_theme_name_slug='autumn'
 tempus_theme_name_slug_full='tempus-autumn'
+tempus_theme_name_slug_full_underscore='tempus_autumn'
 tempus_theme_description='Dark theme with a palette inspired by earthly colours (WCAG AA compliant)'
 tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
 

@@ -17,6 +17,7 @@ tempus_theme_name='Past'
 tempus_theme_name_full='Tempus Past'
 tempus_theme_name_slug='past'
 tempus_theme_name_slug_full='tempus-past'
+tempus_theme_name_slug_full_underscore='tempus_past'
 tempus_theme_description='Light theme inspired by old vaporwave concept art (WCAG AA compliant)'
 tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
 

@@ -1,6 +1,6 @@
 ; vi: ft=dosini
 [Scheme]
-Name=Tempus $scheme
+Name=$tempus_theme_name_full
 ColorForeground=#${colfg}
 ColorBackground=#${colbg}
 ColorCursor=#${colfg}

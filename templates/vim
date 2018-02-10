@@ -1,14 +1,14 @@
 " vi: ft=vim
 
-" Name: Tempus $scheme
-" Author: Protesilaos Stavrou <https://protesilaos.com>
+" Name: $tempus_theme_name_full
+" Author: $tempus_theme_author
 
 set background=$colvr
 hi clear
 if exists("syntax_on")
   syntax reset
 endif
-let g:colors_name = "tempus_${scheme}"
+let g:colors_name = "${tempus_theme_name_slug_full_underscore}"
 
 " General
 " -----------------

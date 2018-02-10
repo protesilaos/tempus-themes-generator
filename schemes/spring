@@ -17,6 +17,7 @@ tempus_theme_name='Spring'
 tempus_theme_name_full='Tempus Spring'
 tempus_theme_name_slug='spring'
 tempus_theme_name_slug_full='tempus-spring'
+tempus_theme_name_slug_full_underscore='tempus_spring'
 tempus_theme_description='Dark theme with a palette inspired by early spring colours (WCAG AA compliant)'
 tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
 

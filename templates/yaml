@@ -1,6 +1,7 @@
 # vi: ft=yaml
-scheme: "Tempus $scheme"
-author: "Protesilaos Stavrou <https://protesilaos.com>"
+scheme: "${tempus_theme_name_full}"
+author: "${tempus_theme_author}"
+description: "${tempus_theme_description}"
 col0: "#${col0}" # black variant
 col1: "#${col1}" # red variant
 col2: "#${col2}" # green variant

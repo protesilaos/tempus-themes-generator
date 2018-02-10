@@ -17,6 +17,7 @@ tempus_theme_name='Summer'
 tempus_theme_name_full='Tempus Summer'
 tempus_theme_name_slug='summer'
 tempus_theme_name_slug_full='tempus-summer'
+tempus_theme_name_slug_full_underscore='tempus_summer'
 tempus_theme_description='Dark theme with colours inspired by summer evenings by the sea (WCAG AA compliant)'
 tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
 

@@ -4,6 +4,12 @@
 
 *NOTE. No release tags are made available. While this script 'works' for my limited use case, it is not tested for widespread use.*
 
+## 0.5.1.20180210
+
+All templates now make better use of each scheme's meta data.
+
+Define scheme name slug with an underscore instead of just with a hyphen (for cases where a hyphen is not appropriate).
+
 ## 0.5.0.20180209
 
 Added template for Tilix (formerly Terminix). This is a modern terminal emulator, targetted at GNOME users.

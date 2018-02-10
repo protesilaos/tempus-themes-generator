@@ -1,6 +1,7 @@
 ! vi: ft=xdefaults
-! Colour scheme: Tempus $scheme
-! By Protesilaos Stavrou
+! Theme: $tempus_theme_name_full
+! Description: $tempus_theme_description
+! Author: $tempus_theme_author
 xterm*background: #${colbg}
 xterm*foreground: #${colfg}
 xterm*cursorColor: #${colfg}

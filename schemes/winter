@@ -17,6 +17,7 @@ tempus_theme_name='Winter'
 tempus_theme_name_full='Tempus Winter'
 tempus_theme_name_slug='winter'
 tempus_theme_name_slug_full='tempus-winter'
+tempus_theme_name_slug_full_underscore='tempus_winter'
 tempus_theme_description='Dark theme with a palette inspired by winter nights at the city (WCAG AA compliant)'
 tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
 

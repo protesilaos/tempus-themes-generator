@@ -18,6 +18,7 @@ tempus_theme_name='Warp'
 tempus_theme_name_full='Tempus Warp'
 tempus_theme_name_slug='warp'
 tempus_theme_name_slug_full='tempus-warp'
+tempus_theme_name_slug_full_underscore='tempus_warp'
 tempus_theme_description='Dark theme with a vibrant palette (WCAG AA compliant)'
 tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
 
