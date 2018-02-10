@@ -9,7 +9,7 @@ Thank you for your willingness to help!
 First of all, an overview of this project's design to help you understand the workflow (and where you could do your part):
 
 1. The `tempus-themes-generator` ([this repo](https://github.com/protesilaos/tempus-themes-generator)) is the tool that is used to build the Tempus themes. All contributions to the underlying code should be made here (more in the following sections).
-2. The [Tempus Themes](https://github.com/protesilaos/tempus-themes) is the main end-user-facing repository. It contains all the files pertaining to the Tempus themes, as well as some helper scripts for building template-specific directories.
+2. The [Tempus Themes](https://github.com/protesilaos/tempus-themes) is the main end-user-facing repository. It contains all the files pertaining to the Tempus themes, as well as general information on the project as a whole.
 3. For each of the available templates there is a dedicated repository on GitHub (exceptions are generic data files, such as YAML ports). Their naming follows this pattern: `tempus-themes-[NAME OF TEMPLATE]`. For example, `tempus-themes-xfce4-terminal` contains files specific to the `xfce4-terminal`. Where appropriate, these repositories also function as the source code for GNU/Linux distro packages. As an Arch Linux user myself, I [currently maintain](https://aur.archlinux.org/packages/?SeB=m&K=protesilaos) such packages on the Arch User Repository. Links to these repos are included in the [README.md](https://github.com/protesilaos/tempus-themes-generator/blob/master/README.md). 
 
 ## How the generator is designed
