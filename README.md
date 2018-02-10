@@ -6,23 +6,23 @@ A nimble tool to automate the process of exporting the [Tempus colour schemes](h
 
 The generator consists of a bash script which parses the sets of variables of each scheme through templates and outputs the result to the terminal (stdout).
 
-## Contents
+#### Table of Contents
 
-- Usage
-    - Examples
-    - File type extensions
-- Applying the themes
-    - Template-specific repositories
-    - GTK 3 Source View
-    - Tilix
-    - URxvt (Rxvt-Unicode)
-    - Xterm
-    - Xfce4 terminal
-    - Vim
-- Roadmap
-- Changelog
-- Additional resources
-- License
+- [Usage](#usage) 
+    - [Examples](#examples)
+    - [File type extensions](#file-type-extensions)
+- [Applying the themes](#applying-the-themes) 
+    - [Template-specific repositories](#template-specific-repositories) 
+    - [GTK3 Source View](#gtk3-source-view)
+    - [Tilix](#tilix) 
+    - [URxvt (Rxvt-Unicode)](#urxvt-rxvt-unicode) 
+    - [Xterm](#xterm) 
+    - [Xfce4 terminal](#xfce4-terminal) 
+    - [Vim](#vim) 
+- [Roadmap](#roadmap) 
+- [Changelog](#changelog) 
+- [Additional resources](#additional-resources) 
+- [License](#license) 
 
 ## Usage
 
@@ -70,7 +70,9 @@ Directly create a new file named `tempus_winter.vim` containing the output and p
 ./tempus-themes-generator.sh winter vim > ~/Desktop/tempus_winter.vim
 ```
 
-### File type extensions for each template
+### File type extensions
+
+When exporting to a new file, make sure to use the appropriate file type extension.
 
 ```
 gtksourceview3 = .xml
@@ -100,7 +102,7 @@ Before trying to do things manually, you may want to check out the following rep
 - [Tempus themes **Xfce4 terminal**](https://github.com/protesilaos/tempus-themes-xfce4-terminal)
 - [Tempus themes **Xterm**](https://github.com/protesilaos/tempus-themes-xterm)
 
-### GTK 3 Source View
+### GTK3 Source View
 
 This is the file used by GTK3 programs to highlight code syntax. Typically implemented by text editors. Some of the popular choices are Gedit (default GNOME), Pluma (default MATE), and Xed (default Linux Mint Cinnamon).
 
@@ -236,11 +238,13 @@ colorscheme tempus_winter
 
 ## Roadmap (help is much appreciated)
 
-- Refine the code.
-- Improve documentation.
-- Improve templates where possible.
-- Produce templates for other popular apps (Termite, Tilix, etc.).
-- Anything else?
+- Refine the code where necessary.
+- Improve the templates where possible.
+- Produce templates for other popular apps.
+
+## Contributing
+
+See [CONTRIBUTING.md](https://github.com/protesilaos/tempus-themes-generator/gblob/master/CONTRIBUTING.md)
 
 ## Changelog
 
