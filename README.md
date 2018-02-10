@@ -20,6 +20,7 @@ The generator consists of a bash script which parses the sets of variables of ea
     - [Xfce4 terminal](#xfce4-terminal) 
     - [Vim](#vim) 
 - [Roadmap](#roadmap) 
+- [Contributing](#contributing)
 - [Changelog](#changelog) 
 - [Additional resources](#additional-resources) 
 - [License](#license) 
