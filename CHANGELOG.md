@@ -4,6 +4,10 @@
 
 *NOTE. No release tags are made available. While this script 'works' for my limited use case, it is not tested for widespread use.*
 
+## 0.5.2.20180211
+
+The YAML template now includes more information about the theme.
+
 ## 0.5.1.20180210
 
 All templates now make better use of each scheme's meta data.
