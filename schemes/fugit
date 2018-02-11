@@ -1,0 +1,83 @@
+# vi: ft=sh
+
+# =============================================================================
+# scheme: Fugit
+# scheme family: Tempus
+# description: Light, pleasant theme optimised for long writing/coding sessions
+# author: Protesilaos Stavrou (https://protesilaos.com/)
+# =============================================================================
+
+# This light theme only uses the col15 and col7 values for backgrounds
+# All main values have a contrast ratio of 4.50:1 against col15 and col7 (WCAG AA)
+# Exception is col0 which has a constrast ratio of 5.50:1 (WCAG AA)
+# All bright values have a contrast ratio of 5.50:1 against col15 and col7 (WCAG AA)
+# Exception is col8 which has a constrast ratio of 4.50:1 (WCAG AA)
+# col7 and col15 are mutually exclusive
+
+# Meta data
+# ------------------------------------------------------------------------------
+tempus_theme_name='Fugit'
+tempus_theme_name_full='Tempus Fugit'
+tempus_theme_name_slug='fugit'
+tempus_theme_name_slug_full='tempus-fugit'
+tempus_theme_name_slug_full_underscore='tempus_fugit'
+tempus_theme_description='Light, pleasant theme optimised for long writing/coding sessions'
+tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
+
+# Colour values
+# ------------------------------------------------------------------------------
+col0=4D696F        # black variant
+col1=DF2014        # red variant
+col2=587D0A        # green variant
+col3=8A6F00        # yellow variant
+col4=196BEC        # blue variant
+col5=C83884        # magenta variant
+col6=2A79A2        # cyan variant
+col7=FAF6F9        # white variant
+col8=8B6781        # bright black variant
+col9=9A511A        # bright red variant
+col10=11742F       # bright green variant
+col11=8D590A       # bright yellow variant
+col12=004FFF       # bright blue variant
+col13=9536C0       # bright magenta variant
+col14=046C92       # bright cyan variant
+col15=FFF5F3       # bright white variant
+
+# Terminal values
+# ------------------------------------------------------------------------------
+# Palette values corresponding to terminal codes followed by termcol description
+ccol0=0            # black
+ccol1=1            # red
+ccol2=2            # green
+ccol3=3            # yellow
+ccol4=4            # blue
+ccol5=5            # magenta
+ccol6=6            # cyan
+ccol7=7            # white
+ccol8=8            # brblack
+ccol9=9            # brred
+ccol10=10          # brgreen
+ccol11=11          # bryellow
+ccol12=12          # brblue
+ccol13=13          # brmagenta
+ccol14=14          # brcyan
+ccol15=15          # brwhite
+
+# Base values
+# ------------------------------------------------------------------------------
+# Used for colour mapping in the templates
+colvr=light        # Variant (light or dark)
+colbg=$col15       # Background
+colbgalt=$col7     # Background alternative
+colfg=$col0        # Foreground
+colfgalt=$col8     # Foreground alternative
+colcr=$col0        # Cursor
+colcr2=$col15      # Cursor text
+
+# The following are specific to the Vim template
+# They should always reflect the above base values
+ccolbg=$ccol15     # Console Background
+ccolbgalt=$ccol7   # Console Background alternative
+ccolfg=$ccol0      # Console Foreground
+ccolfgalt=$ccol8   # Console Foreground alternative
+ccolcr=$ccol0      # Console Cursor

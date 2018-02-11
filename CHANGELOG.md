@@ -4,6 +4,10 @@
 
 *NOTE. No release tags are made available. While this script 'works' for my limited use case, it is not tested for widespread use.*
 
+## 0.6.0.20180211
+
+Added Tempus Fugit (light theme, WCAG AA compliant). Its design is similar to Tempus Warp, i.e. base values have a 4.50:1 contrast, while bright values have a 5.50:1.
+
 ## 0.5.2.20180211
 
 The YAML template now includes more information about the theme.
