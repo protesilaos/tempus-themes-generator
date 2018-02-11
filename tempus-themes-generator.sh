@@ -44,7 +44,6 @@ array=$(ls $parent_dir/schemes/)
 # argument `scheme` should match item in array
 # note this works only with single words
 # technically not a problem since all scheme names are single words
-some text just to show its distinction from the comment above ...
 match=$(echo "${array[@]:0}" | grep -o ${scheme})  
 
 # include scheme specs
