@@ -1,0 +1,16 @@
+# ${tempus_theme_name_full}
+
+${tempus_theme_description}
+
+![${tempus_theme_name_slug_full_underscore}](https://raw.githubusercontent.com/protesilaos/tempus-themes-atom/master/screenshots/${tempus_theme_name_slug_full_underscore}.png)
+
+## Install
+
+Install it directly from a terminal using the command:
+
+\`\`\`shell
+apm install ${tempus_theme_name_slug_full}-syntax
+\`\`\`
+
+Alternatively, search for \`${tempus_theme_name_slug_full}-syntax\` in Settings > Install > Themes. 
+
