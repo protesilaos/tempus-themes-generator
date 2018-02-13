@@ -1,0 +1,16 @@
+{
+  "name": "${tempus_theme_name_slug}-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "${tempus_theme_description}",
+  "keywords": [
+    "${tempus_theme_wcag}",
+    "${tempus_theme_variant}",
+    "tempus-themes"
+  ],
+  "repository": "https://github.com/atom/tempus-themes-atom",
+  "license": "GPL-3.0",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

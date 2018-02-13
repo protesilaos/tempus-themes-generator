@@ -1,0 +1,29 @@
+// These colours are specific to the theme. Do not use in a package!
+
+// Colour values
+// ------------------------------------------------------------------------------
+@col0: #$col0; // black variant
+@col1: #$col1; // red variant
+@col2: #$col2; // green variant
+@col3: #$col3; // yellow variant
+@col4: #$col4; // blue variant
+@col5: #$col5; // magenta variant
+@col6: #$col6; // cyan variant
+@col7: #$col7; // white variant
+@col8: #$col8; // bright black variant
+@col9: #$col9; // bright red variant
+@col10: #$col10; // bright green variant
+@col11: #$col11; // bright yellow variant
+@col12: #$col12; // bright blue variant
+@col13: #$col13; // bright magenta variant
+@col14: #$col14; // bright cyan variant
+@col15: #$col15; // bright white variant
+
+// Base values
+// ------------------------------------------------------------------------------
+@colbg: #$colbg; // Background
+@colbgalt: #$colbgalt; // Background alternative
+@colfg: #$colfg; // Foreground
+@colfgalt: #$colfgalt; // Foreground alternative
+@colcr: #$colcr; // Cursor
+@colcr2: #$colcr2; // Cursor text
