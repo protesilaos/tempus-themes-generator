@@ -4,6 +4,10 @@
 
 *NOTE. No release tags are made available. While this script 'works' for my limited use case, it is not tested for widespread use.*
 
+## 0.7.0.20180213
+
+Initial support for Atom editor syntax theme packages. Not all `atom-*` templates expand generator variables. They are just located here to build a complete package from a single source. For a script that builds these packages refer to the `export-atom.sh` in the [tempus-themes-utils](https://github.com/protesilaos/tempus-themes-utils) repository.
+
 ## 0.6.1.20180213
 
 Each theme now has a meta data definition for its WCAG compliance.
