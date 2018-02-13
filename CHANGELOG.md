@@ -4,9 +4,23 @@
 
 *NOTE. No release tags are made available. While this script 'works' for my limited use case, it is not tested for widespread use.*
 
+## 0.7.1.20180213
+
+Upon further testing it appears that Atom does not behave as one would expect of text editors. For instance, one cannot change the colour of the foreground in a selected region, because that is a different div (Atom is a text editor based on Electron, which is basically a highly configured web browser). The cursor behaves similarly.
+
+Some online source make reference to some shadow DOM but they are under-documented. 
+
+Workarounds would require creating new colours and/or violating the contrast ratio of each scheme (for example a semi-transparent selection background). That is outside the scope of the Tempus Themes project. An accessible theme should be accessible throughout.
+
+Furthermore, and unlike Vim, Atom's code construct definitions leave something to be desired. A case in point: in my last test, the definition of shell variables was not being picked up, so that in the case of `some_definition=some_value` the `some_definition` could only be styled as generic shell source. But passing styles to that would affect all shell source text, which is not desired.
+
+Ultimately, styling Atom is a rather inelegant, tedious piece of work. For the time being, the Atom-related template files are being removed from the Tempus Themes generator. Atom will only be reconsidered once its theming is stabilised and well documented.
+
 ## 0.7.0.20180213
 
-Initial support for Atom editor syntax theme packages. Not all `atom-*` templates expand generator variables. They are just located here to build a complete package from a single source. For a script that builds these packages refer to the `export-atom.sh` in the [tempus-themes-utils](https://github.com/protesilaos/tempus-themes-utils) repository.
+~~Initial support for Atom editor syntax theme packages. Not all `atom-*` templates expand generator variables. They are just located here to build a complete package from a single source. For a script that builds these packages refer to the `export-atom.sh` in the [tempus-themes-utils](https://github.com/protesilaos/tempus-themes-utils) repository.~~
+
+Remove support for Atom. See version `0.7.1.20180213`.
 
 ## 0.6.1.20180213
 
