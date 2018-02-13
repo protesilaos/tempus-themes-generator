@@ -4,6 +4,14 @@
 
 *NOTE. No release tags are made available. While this script 'works' for my limited use case, it is not tested for widespread use.*
 
+## 0.6.1.20180213
+
+Each theme now has a meta data definition for its WCAG compliance.
+
+Theme variant (light or dark) is now part of meta data section. The previous approach was to declare this in the "base" defaults.
+
+Templates have been adapted to the new theme variant variable.
+
 ## 0.6.0.20180211
 
 Added Tempus Fugit (light theme, WCAG AA compliant). Its design is similar to Tempus Warp, i.e. base values have a 4.50:1 contrast, while bright values have a 5.50:1.

@@ -19,6 +19,8 @@ tempus_theme_name_slug='spring'
 tempus_theme_name_slug_full='tempus-spring'
 tempus_theme_name_slug_full_underscore='tempus_spring'
 tempus_theme_description='Dark theme with a palette inspired by early spring colours (WCAG AA compliant)'
+tempus_theme_wcag='WCAG AA'
+tempus_theme_variant='dark'
 tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
 
 # Colour values
@@ -63,7 +65,6 @@ ccol15=15         # brwhite
 # Base values
 # ------------------------------------------------------------------------------
 # Used for colour mapping in the templates
-colvr=dark        # Variant (light or dark)
 colbg=$col0       # Background
 colbgalt=$col8    # Background alternative
 colfg=$col15      # Foreground

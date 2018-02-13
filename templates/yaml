@@ -4,6 +4,7 @@ slug: "${tempus_theme_name_slug_full}"
 slugunderscore: "${tempus_theme_name_slug_full_underscore}"
 author: "${tempus_theme_author}"
 description: "${tempus_theme_description}"
+variant: "${tempus_theme_variant}" # light or dark
 col0: "#${col0}" # black variant
 col1: "#${col1}" # red variant
 col2: "#${col2}" # green variant
@@ -20,7 +21,6 @@ col12: "#${col12}" # bright blue variant
 col13: "#${col13}" # bright magenta variant
 col14: "#${col14}" # bright cyan variant
 col15: "#${col15}" # bright white variant
-colvr: "${colvr}" # theme variant
 colbg: "#${colbg}" # main background
 colbgalt: "#${colbgalt}" # alternative background
 colfg: "#${colfg}" # main foreground

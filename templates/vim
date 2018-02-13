@@ -3,7 +3,7 @@
 " Name: $tempus_theme_name_full
 " Author: $tempus_theme_author
 
-set background=$colvr
+set background=$tempus_theme_variant
 hi clear
 if exists("syntax_on")
   syntax reset

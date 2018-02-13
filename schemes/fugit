@@ -3,7 +3,7 @@
 # =============================================================================
 # scheme: Fugit
 # scheme family: Tempus
-# description: Light, pleasant theme optimised for long writing/coding sessions
+# description: Light, pleasant theme optimised for long writing/coding sessions (WCAG AA)
 # author: Protesilaos Stavrou (https://protesilaos.com/)
 # =============================================================================
 
@@ -21,7 +21,9 @@ tempus_theme_name_full='Tempus Fugit'
 tempus_theme_name_slug='fugit'
 tempus_theme_name_slug_full='tempus-fugit'
 tempus_theme_name_slug_full_underscore='tempus_fugit'
-tempus_theme_description='Light, pleasant theme optimised for long writing/coding sessions'
+tempus_theme_description='Light, pleasant theme optimised for long writing/coding sessions (WCAG AA compliant)'
+tempus_theme_wcag='WCAG AA'
+tempus_theme_variant='light'
 tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
 
 # Colour values
@@ -66,7 +68,6 @@ ccol15=15          # brwhite
 # Base values
 # ------------------------------------------------------------------------------
 # Used for colour mapping in the templates
-colvr=light        # Variant (light or dark)
 colbg=$col15       # Background
 colbgalt=$col7     # Background alternative
 colfg=$col0        # Foreground
