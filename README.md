@@ -24,6 +24,8 @@ The generator consists of a bash script which parses the sets of variables of ea
 - [Changelog](#changelog) 
 - [Additional resources](#additional-resources) 
 - [License](#license) 
+- [Meta](#meta) 
+- [Donations](#donations) 
 
 ## Usage
 
@@ -260,3 +262,13 @@ For a hub with all available ports, see the main [Tempus themes repo](https://gi
 GNU General Public License Version 3. 
 
 See [LICENSE](https://github.com/protesilaos/tempus-themes-generator/gblob/master/LICENSE)
+
+## Meta
+
+The Tempus themes project consists of a number of repositories. It is maintained with a set of scripts and utilities, stored in the [tempus-themes-utils](https://github.com/protesilaos/tempus-themes-utils).
+
+All theme files are created with the [Tempus themes generator](https://github.com/protesilaos/tempus-themes-generator). See the generator CONTRIBUTING.md.
+
+## Donations
+
+If you appreciate this work, consider [donating via PayPal](https://www.paypal.me/protesilaos).
