@@ -4,6 +4,12 @@
 
 *NOTE. No release tags are made available. While this script 'works' for my limited use case, it is not tested for widespread use.*
 
+## 0.7.2.20180214
+
+General refinements to the Vim template. Some notes:
+- The 'popup' menu for autocompletion has better colours for foreground, background, and selection. Their font attributes have also been adjusted. List items are italicised, while the selection is bold.
+- The `Title` construct now has the main background value specified as its bg. In the editor this should not be visible. Where it appears is on the tab list, specifically when the tab is active, and has multiple buffers. The active tab use the default foreground colour as its backdrop, which would normally obscure the `Title`. With this tweak, the `Title` will still be visible as it will be drawn on the default bg.
+
 ## 0.7.1.20180213
 
 Upon further testing it appears that Atom does not behave as one would expect of text editors. For instance, one cannot change the colour of the foreground in a selected region, because that is a different div (Atom is a text editor based on Electron, which is basically a highly configured web browser). The cursor behaves similarly.
