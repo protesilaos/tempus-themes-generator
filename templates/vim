@@ -122,10 +122,10 @@ hi SpellCap guibg=#${col3} guifg=#${colbg} ctermbg=$ccol3 ctermfg=$ccolbg
 hi SpellRare guibg=#${col13} guifg=#${colbg} ctermbg=$ccol13 ctermfg=$ccolbg
 hi SpellLocal guibg=#${col14} guifg=#${colbg} ctermbg=$ccol14 ctermfg=$ccolbg
 
-hi Pmenu gui=italic guibg=#${colfgalt} guifg=#${colbgalt} cterm=italic ctermbg=$ccolfgalt ctermfg=$ccolbgalt
-hi PmenuSel gui=none,bold guibg=#${colbgalt} guifg=#${colfg} cterm=none,bold ctermbg=$ccolbgalt ctermfg=$ccolfg
-hi PmenuSbar guibg=#${colfgalt} ctermbg=$ccolfgalt
-hi PmenuThumb guibg=#${colbgalt} ctermbg=$ccolbgalt
+hi Pmenu gui=italic guibg=#${colbgalt} guifg=#${colfg} cterm=italic ctermbg=$ccolbgalt ctermfg=$ccolfg
+hi PmenuSel gui=none,bold guibg=#${colfgalt} guifg=#${colbg} cterm=none,bold ctermbg=$ccolfgalt ctermfg=$ccolbg
+hi PmenuSbar guibg=#${colbgalt} ctermbg=$ccolbgalt
+hi PmenuThumb guibg=#${colfgalt} ctermbg=$ccolfgalt
 
 " Diffs
 " -----------------
