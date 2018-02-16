@@ -1,7 +1,7 @@
 " vi: ft=vim
-
 " Name: $tempus_theme_name_full
 " Author: $tempus_theme_author
+" Description: $tempus_theme_description
 
 set background=$tempus_theme_variant
 hi clear
