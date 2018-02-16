@@ -1,3 +1,4 @@
+# vi: ft=json
 {
     "name": "${tempus_theme_name_full}",
     "comment": "${tempus_theme_description}",
