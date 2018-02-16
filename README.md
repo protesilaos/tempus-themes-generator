@@ -107,7 +107,7 @@ Before trying to do things manually, you may want to check out the following rep
 
 ### GTK3 Source View
 
-This is the file used by GTK3 programs to highlight code syntax. Typically implemented by text editors. Some of the popular choices are Gedit (default GNOME), Pluma (default MATE), and Xed (default Linux Mint Cinnamon).
+This is the file used by GTK3 programs to highlight code syntax. Typically implemented by text editors. Some of the popular choices are Gedit (default GNOME), Pluma (default MATE), Mousepad (default Xfce), and Xed (default Linux Mint Cinnamon).
 
 The theme files can be located in either of two places:
 
