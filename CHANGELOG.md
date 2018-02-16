@@ -4,6 +4,12 @@
 
 *NOTE. No release tags are made available. While this script 'works' for my limited use case, it is not tested for widespread use.*
 
+## 0.7.3.20180216
+
+The generator script is now configured to omit any line that specifies the Vi filetype in the source files. This is done by using a reverse grep pipe. That content is not needed by applications that use the output files.
+
+About vi filetype declarations: I use that option to tell Vim what syntax highlighting to apply on an extensionless file (all the files under `schemes` and `templates`. Knowledge of the filetype is also needed to use the appropriate comment format with Vim's commenter plugin.
+
 ## 0.7.2.20180214
 
 General refinements to the Vim template. Some notes:
