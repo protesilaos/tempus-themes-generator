@@ -4,6 +4,10 @@
 
 *NOTE. No release tags are made available. While this script 'works' for my limited use case, it is not tested for widespread use.*
 
+## 0.8.0.20180224
+
+Added Tempus Rift (dark theme, WCAG AA compliant). Its design is similar to Tempus Warp and Tempus Fugit, i.e. base values have a 4.50:1 contrast, while bright values have a 5.50:1. Tempus Rift is making more liberal use of the green value. Every colour has a higher dose of green, thus resulting in a subdued, moderately green-ish palette.
+
 ## 0.7.3.20180216
 
 The generator script is now configured to omit any line that specifies the Vi filetype in the source files. This is done by using a reverse grep pipe. That content is not needed by applications that use the output files.
