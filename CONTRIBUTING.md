@@ -37,7 +37,7 @@ Prior notes:
 
 Areas I have identified:
 
-1. The colour values are written in HEX. What would be the best way to [automatically] convert these to their corresponding value in another colour space? For example, HEX -> RGB. This operation would be needed to develop ports for programs that do not support HEX.
+1. ~~The colour values are written in HEX. What would be the best way to [automatically] convert these to their corresponding value in another colour space? For example, HEX -> RGB. This operation would be needed to develop ports for programs that do not support HEX.~~ Done as of [0.9.0.20180225](https://github.com/protesilaos/tempus-themes-generator/blob/master/CHANGELOG.md#09020180225). Every item under `schemes` converts HEX colours to RGB using shell variable expansion.
 2. The palettes consist of 16 colours. For most cases this is enough. There are however some programs where a wider palette would be more appropriate. Suggestions are welcome!
 
 ### Improving the templates

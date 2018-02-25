@@ -8,6 +8,8 @@
 
 Add template for Konsole, the default KDE terminal. Update README accordingly.
 
+Now every item under `schemes` converts HEX colours to RGB using shell variable expansion. The inclusion of RGB definitions is a prerequisite to developing new templates for applications that do not support HEX values.
+
 ## 0.8.1.20180224
 
 Add template for shell variables. There are no instructions for this, just as with the `yaml` template. The idea is that this generates a generic file that can be used in some custom setup. For a working example, see my dmenu* wrapper scripts from [my dotfiles](https://github.com/protesilaos/fotfiles) (search them under `bin` and then follow the path they reference).
