@@ -14,6 +14,7 @@ The generator consists of a bash script which parses the sets of variables of ea
 - [Applying the themes](#applying-the-themes) 
     - [Template-specific repositories](#template-specific-repositories) 
     - [GTK3 Source View](#gtk3-source-view)
+    - [Konsole](#konsole)
     - [Tilix](#tilix) 
     - [URxvt (Rxvt-Unicode)](#urxvt-rxvt-unicode) 
     - [Xterm](#xterm) 
@@ -79,6 +80,7 @@ When exporting to a new file, make sure to use the appropriate file type extensi
 
 ```
 gtksourceview3 = .xml
+konsole = .colorscheme
 tilix = .json
 urvxt = .Xcolors, .Xresources, .Xdefaults
 vim = .vim
@@ -99,6 +101,7 @@ Each application uses a different set of conventions. Below are some tried and t
 Before trying to do things manually, you may want to check out the following repos with pre-built ports. Some of these even have packages for Arch Linux (through the Arch User Repository).
 
 - [Tempus themes **GTK3 Source View**](https://github.com/protesilaos/tempus-themes-gtksourceview3)
+- [Tempus themes **Konsole**](https://github.com/protesilaos/tempus-themes-konsole)
 - [Tempus themes **Tilix**](https://github.com/protesilaos/tempus-themes-tilix)
 - [Tempus themes **URxvt**](https://github.com/protesilaos/tempus-themes-urxvt)
 - [Tempus themes **Vim plugin**](https://github.com/protesilaos/tempus-themes-vim)
@@ -125,6 +128,25 @@ mkdir -p ~/.local/share/gtksourceview-3.0/styles/
 ```
 
 The theme will then be available from the supported app's preferences window.
+
+### Konsole
+
+Konsole is the default terminal for KDE. Its theme files can be located in either of two places:
+
+- At `/usr/share/konsole/` which makes them accessible to all users (requires root privileges).
+- Or `~/.local/share/konsole/` for use by the current user (directory path needs to be created if it does not already exist).
+
+Choose whatever option suits your needs. The following commands use the latter as an example.
+
+```sh
+# Create destination directory if it does not already exist
+mkdir -p ~/.local/share/konsole/
+
+# Generate the theme and place it in the created directory
+./tempus-themes-generator.sh winter konsole > ~/.local/share/konsole/tempus_winter.colorscheme
+```
+
+The theme will then be available from the profile preferences window under the "Appearance" tab.
 
 ### Tilix
 

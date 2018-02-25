@@ -4,6 +4,10 @@
 
 *NOTE. No release tags are made available. While this script 'works' for my limited use case, it is not tested for widespread use.*
 
+## 0.9.0.20180225
+
+Add template for Konsole, the default KDE terminal. Update README accordingly.
+
 ## 0.8.1.20180224
 
 Add template for shell variables. There are no instructions for this, just as with the `yaml` template. The idea is that this generates a generic file that can be used in some custom setup. For a working example, see my dmenu* wrapper scripts from [my dotfiles](https://github.com/protesilaos/fotfiles) (search them under `bin` and then follow the path they reference).
