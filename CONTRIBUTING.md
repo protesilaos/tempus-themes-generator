@@ -45,7 +45,7 @@ Areas I have identified:
 Areas where help is needed:
 
 1. Improving existing templates. Maybe there are some styles that do not work properly, or things that could be done better.
-2. Submit new templates! Some programs I have in mind are ~~Atom~~ (Atom is cancelled—see [CHANGELOG 0.7.1.20180213](https://github.com/protesilaos/tempus-themes-generator/blob/master/CHANGELOG.md#07120180213), VS Studio Code, Sublime Text, Emacs, GNOME Terminal, MATE Terminal, Konsole, Kate, Kwrite.
+2. Submit new templates! Some programs I have in mind are ~~Atom~~ (Atom is cancelled—see [CHANGELOG 0.7.1.20180213](https://github.com/protesilaos/tempus-themes-generator/blob/master/CHANGELOG.md#07120180213), VS Studio Code, Sublime Text, Emacs, GNOME Terminal, MATE Terminal, Kate, Kwrite.
     - Can we keep the same colour mapping as the Vim template? The idea is that themes should feel 'identical' when moving from one app to another (obviously that is not 100% possible due to the constraints or specific functionality of each program).
     - Complex templates are also welcome. For example, we may want to build a port for Atom, which would encompass its `package.json` and its main styling files. The naming pattern should be `templates/atom-[DIRECTORY if not root]-[FILE if there are multiple that are needed]`, such as `templates/atom-package`, `templates/atom-index`, `templates/atom-styles-base`, `templates/atom-styles-colors` (this point stands even though Atom itself is not part of the current plan, as per [CHANGELOG 0.7.1.20180213](https://github.com/protesilaos/tempus-themes-generator/blob/master/CHANGELOG.md#07120180213))
     - Merging into `master` will only be done once these have been thoroughly tested.
