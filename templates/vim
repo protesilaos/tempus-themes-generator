@@ -1,7 +1,7 @@
 " vi: ft=vim
-
 " Name: $tempus_theme_name_full
 " Author: $tempus_theme_author
+" Description: $tempus_theme_description
 
 set background=$tempus_theme_variant
 hi clear
@@ -26,7 +26,7 @@ hi StatusLineTermNC gui=none guibg=#${colbgalt} guifg=#${col2} cterm=none ctermb
 
 hi VertSplit gui=none cterm=none
 hi TabLine gui=none guibg=#${colbgalt} guifg=#${colfgalt} cterm=none ctermbg=$ccolbgalt ctermfg=$ccolfgalt
-hi TabLineSel gui=none guibg=#${col2} guifg=#${colbg} cterm=none ctermbg=$ccol2 ctermfg=$ccolbg
+hi TabLineSel gui=none guibg=#${colfg} guifg=#${colbg} cterm=none ctermbg=$ccolfg ctermfg=$ccolbg
 hi TabLineFill gui=none cterm=none
 
 hi Comment gui=italic guifg=#${colfgalt} cterm=italic ctermfg=$ccolfgalt
@@ -37,7 +37,7 @@ hi WarningMsg gui=none guibg=#${col3} guifg=#${colbg} cterm=none ctermbg=$ccol3 
 hi Error gui=none guibg=#${col1} guifg=#${colbg} cterm=none ctermbg=$ccol1 ctermfg=$ccolbg
 hi ErrorMsg gui=none guibg=#${col1} guifg=#${colbg} cterm=none ctermbg=$ccol1 ctermfg=$ccolbg
 
-hi MatchParen gui=underline guibg=#${col13} guifg=#${colbg} cterm=underline ctermbg=$ccol13 ctermfg=$ccolbg
+hi MatchParen gui=underline,bold guibg=#${col13} guifg=#${colbg} cterm=underline,bold ctermbg=$ccol13 ctermfg=$ccolbg
 
 hi ToolbarLine guibg=#${colfgalt} guifg=#${colbg} term=none ctermbg=$ccolfgalt ctermfg=$ccolbg
 hi ToolbarButton gui=bold guibg=#${colfgalt} guifg=#${colbg} term=none cterm=bold ctermbg=$ccolfgalt ctermfg=$ccolbg
@@ -79,7 +79,7 @@ hi Macro gui=bold guifg=#${col9} cterm=bold ctermfg=$ccol9
 hi Include guifg=#${col9} ctermfg=$ccol9
 hi Define guifg=#${col9} ctermfg=$ccol9
 
-hi Title gui=bold guifg=#${col14} cterm=bold ctermfg=$ccol14
+hi Title gui=bold guibg=#${colbg} guifg=#${col6} cterm=bold ctermbg=$ccolbg ctermfg=$ccol6
 
 hi Special gui=bold guifg=#${col11} term=none cterm=bold ctermfg=$ccol11
 hi SpecialKey guifg=#${col11} ctermfg=$ccol11
@@ -113,7 +113,7 @@ hi ModeMsg gui=bold guifg=#${col2} cterm=bold ctermfg=$ccol2
 hi VimOption guifg=#${col5} ctermfg=$ccol5
 hi VimGroup guifg=#${col5} ctermfg=$ccol5
 
-hi Underlined gui=none,bold guifg=#${colfg} cterm=underline,bold ctermfg=$ccolfg
+hi Underlined gui=underline,bold guifg=#${colfg} cterm=underline,bold ctermfg=$ccolfg
 hi Ignore guibg=#${colbgalt} guifg=#${colfgalt} ctermbg=$ccolbgalt ctermfg=$ccolfgalt
 hi Conceal guibg=#${colfgalt} guifg=#${colbgalt} ctermbg=$ccolfgalt ctermfg=$ccolbgalt
 
@@ -122,10 +122,10 @@ hi SpellCap guibg=#${col3} guifg=#${colbg} ctermbg=$ccol3 ctermfg=$ccolbg
 hi SpellRare guibg=#${col13} guifg=#${colbg} ctermbg=$ccol13 ctermfg=$ccolbg
 hi SpellLocal guibg=#${col14} guifg=#${colbg} ctermbg=$ccol14 ctermfg=$ccolbg
 
-hi Pmenu guibg=#${colfgalt} guifg=#${colbgalt} ctermbg=$ccolfgalt ctermfg=$ccolbgalt
-hi PmenuSel guibg=#${colbgalt} guifg=#${col2} ctermbg=$ccolbgalt ctermfg=$ccol2
-hi PmenuSbar guibg=#${colfg} ctermbg=$ccolfg
-hi PmenuThumb guibg=#${colbgalt} ctermbg=$ccolbgalt
+hi Pmenu gui=italic guibg=#${colbgalt} guifg=#${colfg} cterm=italic ctermbg=$ccolbgalt ctermfg=$ccolfg
+hi PmenuSel gui=none,bold guibg=#${colfgalt} guifg=#${colbg} cterm=none,bold ctermbg=$ccolfgalt ctermfg=$ccolbg
+hi PmenuSbar guibg=#${colbgalt} ctermbg=$ccolbgalt
+hi PmenuThumb guibg=#${colfgalt} ctermbg=$ccolfgalt
 
 " Diffs
 " -----------------

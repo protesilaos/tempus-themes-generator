@@ -1,0 +1,26 @@
+#!/bin/bash
+# Can be sourced from scripts to expose these colours as variables.
+
+# theme: ${tempus_theme_name_full}
+# author: ${tempus_theme_author}
+# description: ${tempus_theme_description}
+background="#${colbg}"
+foreground="#${colfg}"
+cursorColor="#${colcr}"
+cursorColor2="#${colcr2}"
+color0="#${col0}"
+color1="#${col1}"
+color2="#${col2}"
+color3="#${col3}"
+color4="#${col4}"
+color5="#${col5}"
+color6="#${col6}"
+color7="#${col7}"
+color8="#${col8}"
+color9="#${col9}"
+color10="#${col10}"
+color11="#${col11}"
+color12="#${col12}"
+color13="#${col13}"
+color14="#${col14}"
+color15="#${col15}"

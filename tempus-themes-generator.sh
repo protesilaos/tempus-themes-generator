@@ -44,11 +44,11 @@ array=$(ls $parent_dir/schemes/)
 # argument `scheme` should match item in array
 # note this works only with single words
 # technically not a problem since all scheme names are single words
-match=$(echo "${array[@]:0}" | grep -o ${scheme})  
+match=$(echo "${array[@]:0}" | grep -o $scheme)  
 
 # include scheme specs
 set -a
-. $parent_dir/schemes/${scheme}
+. $parent_dir/schemes/$scheme
 set +a
 
 # Parse template
@@ -59,7 +59,7 @@ trap 'rm -f $tempfile' 0 1 2 3 15 # Clean up the temporary file
 
 (
   echo 'cat <<END_OF_TEXT'
-  cat "$template_path"
+  cat "$template_path" | grep -v 'vi: ft='
   echo 'END_OF_TEXT'
 ) > $tempfile
 . $tempfile

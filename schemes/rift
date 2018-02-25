@@ -1,46 +1,47 @@
 # vi: ft=sh
 
 # =============================================================================
-# scheme: Spring
+# scheme: Rift
 # scheme family: Tempus
-# description: Dark theme with a palette inspired by early spring colours
+# description: Dark theme with a subdued palette on the green side of the spectrum
 # author: Protesilaos Stavrou (https://protesilaos.com/)
 # =============================================================================
 
-# This theme only uses the col0 and col8 values for backgrounds
-# All colours have a contrast ratio of 4.50:1 against col0 and col8 (WCAG AA)
+# This dark theme only uses the col0 and col8 values for backgrounds
+# All main values have a contrast ratio of 4.50:1 against col0 and col8 (WCAG AA)
+# All bright values have a contrast ratio of 5.50:1 against col0 and col8 (WCAG AA)
 # Exception is col8 on col0 or vice versa (these two are mutually exclusive)
 
 # Meta data
 # ------------------------------------------------------------------------------
-tempus_theme_name='Spring'
-tempus_theme_name_full='Tempus Spring'
-tempus_theme_name_slug='spring'
-tempus_theme_name_slug_full='tempus-spring'
-tempus_theme_name_slug_full_underscore='tempus_spring'
-tempus_theme_description='Dark theme with a palette inspired by early spring colours (WCAG AA compliant)'
+tempus_theme_name='Rift'
+tempus_theme_name_full='Tempus Rift'
+tempus_theme_name_slug='rift'
+tempus_theme_name_slug_full='tempus-rift'
+tempus_theme_name_slug_full_underscore='tempus_rift'
+tempus_theme_description='Dark theme with a subdued palette on the green side of the spectrum'
 tempus_theme_wcag='WCAG AA'
 tempus_theme_variant='dark'
 tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
 
 # Colour values (HEX)
 # ------------------------------------------------------------------------------
-col0=34403c       # black variant
-col1=ff855a       # red variant
-col2=6ab78a       # green variant
-col3=b6aa1a       # yellow variant
-col4=5daeee       # blue variant
-col5=d495b4       # magenta variant
-col6=6eb2bc       # cyan variant
-col7=96aca7       # white variant
-col8=2a423d       # bright black variant
-col9=df993a       # bright red variant
-col10=4abb88      # bright green variant
-col11=99b22a      # bright yellow variant
-col12=3caffe      # bright blue variant
-col13=d091db      # bright magenta variant
-col14=4ab4d3      # bright cyan variant
-col15=a5a8a7      # bright white variant
+col0=2b353c       # black variant
+col1=be9604       # red variant
+col2=0eb40e       # green variant
+col3=79aa00       # yellow variant
+col4=00acb3       # blue variant
+col5=ba964c       # magenta variant
+col6=5fa98f       # cyan variant
+col7=ab9699       # white variant
+col8=3d3038       # bright black variant
+col9=bdae13       # bright red variant
+col10=3ac53a      # bright green variant
+col11=9ab800      # bright yellow variant
+col12=20bdce      # bright blue variant
+col13=cca57a      # bright magenta variant
+col14=6fb9ae      # bright cyan variant
+col15=abacac      # bright white variant
 
 # Colour values (RGB)
 # ------------------------------------------------------------------------------
