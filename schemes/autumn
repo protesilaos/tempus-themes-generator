@@ -23,7 +23,7 @@ tempus_theme_wcag='WCAG AA'
 tempus_theme_variant='dark'
 tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
 
-# Colour values
+# Colour values (HEX)
 # ------------------------------------------------------------------------------
 col0=322622       # black variant
 col1=fc5526       # red variant
@@ -41,6 +41,26 @@ col12=6b8ed6      # bright blue variant
 col13=9d80d3      # bright magenta variant
 col14=229ea0      # bright cyan variant
 col15=8e8f8d      # bright white variant
+
+# Colour values (RGB)
+# ------------------------------------------------------------------------------
+# The above HEX values are converted into decimal format
+col0rgb=$(printf "%d,%d,%d" 0x${col0:0:2} 0x${col0:2:2} 0x${col0:4:2})
+col1rgb=$(printf "%d,%d,%d" 0x${col11:0:2} 0x${col11:2:2} 0x${col11:4:2})
+col2rgb=$(printf "%d,%d,%d" 0x${col2:0:2} 0x${col2:2:2} 0x${col2:4:2})
+col3rgb=$(printf "%d,%d,%d" 0x${col3:0:2} 0x${col3:2:2} 0x${col3:4:2})
+col4rgb=$(printf "%d,%d,%d" 0x${col4:0:2} 0x${col4:2:2} 0x${col4:4:2})
+col5rgb=$(printf "%d,%d,%d" 0x${col5:0:2} 0x${col5:2:2} 0x${col5:4:2})
+col6rgb=$(printf "%d,%d,%d" 0x${col6:0:2} 0x${col6:2:2} 0x${col6:4:2})
+col7rgb=$(printf "%d,%d,%d" 0x${col7:0:2} 0x${col7:2:2} 0x${col7:4:2})
+col8rgb=$(printf "%d,%d,%d" 0x${col8:0:2} 0x${col8:2:2} 0x${col8:4:2})
+col9rgb=$(printf "%d,%d,%d" 0x${col9:0:2} 0x${col9:2:2} 0x${col9:4:2})
+col10rgb=$(printf "%d,%d,%d" 0x${col10:0:2} 0x${col10:2:2} 0x${col10:4:2})
+col11rgb=$(printf "%d,%d,%d" 0x${col11:0:2} 0x${col11:2:2} 0x${col11:4:2})
+col12rgb=$(printf "%d,%d,%d" 0x${col12:0:2} 0x${col12:2:2} 0x${col12:4:2})
+col13rgb=$(printf "%d,%d,%d" 0x${col13:0:2} 0x${col13:2:2} 0x${col13:4:2})
+col14rgb=$(printf "%d,%d,%d" 0x${col14:0:2} 0x${col14:2:2} 0x${col14:4:2})
+col15rgb=$(printf "%d,%d,%d" 0x${col15:0:2} 0x${col15:2:2} 0x${col15:4:2})
 
 # Terminal base values
 # ------------------------------------------------------------------------------
@@ -65,13 +85,21 @@ ccol15=15         # brwhite
 # Base values
 # ------------------------------------------------------------------------------
 
-# Used for colour mapping in the templates
+# HEX base values
 colbg=$col0       # Background
 colbgalt=$col8    # Background alternative
 colfg=$col15      # Foreground
 colfgalt=$col7    # Foreground alternative
 colcr=$col15      # Cursor
 colcr2=$col0      # Cursor text
+
+# RGB base values
+colbgrgb=$col0rgb       # Background
+colbgaltrgb=$col8rgb    # Background alternative
+colfgrgb=$col15rgb      # Foreground
+colfgaltrgb=$col7rgb    # Foreground alternative
+colcrrgb=$col15rgb      # Cursor
+colcr2rgb=$col0rgb      # Cursor text
 
 # The following are specific to the Vim template
 # They should always reflect the above base values
