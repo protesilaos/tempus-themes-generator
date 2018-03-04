@@ -4,6 +4,10 @@
 
 *NOTE. No release tags are made available. While this script 'works' for my limited use case, it is not tested for widespread use.*
 
+## 0.10.0.20180304
+
+Add template so `st` ("simple terminal" from suckless.org). No installation instructions are provided as each st setup can vary considerably. It is assumed that users of this program already know how to use this template's output.
+
 ## 0.9.0.20180225
 
 Add template for Konsole, the default KDE terminal. Update README accordingly.
