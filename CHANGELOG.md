@@ -2,7 +2,15 @@
 
 *Latest version is at the top. Versioning follows semver specs, with the date appended in the form of YYMMDD.*
 
-*NOTE. No release tags are made available. While this script 'works' for my limited use case, it is not tested for widespread use.*
+*NOTE. No release tags are made available. While this script 'works' for my limited use case, it is not tested for widespread us..*
+
+## 0.11.0.20180306
+
+ADDED. `dawn` and `dusk`, a light and a dark scheme with a blue-ish, slightly desaturated palette. Both are WCAG AA compliant.
+
+FIXED. An error in the rgb conversion of the colour values, where col1 (red) was erroneously defined as col11 (bright yellow).
+
+Minor changes to the formatting of comments in all schemes.
 
 ## 0.10.0.20180304
 

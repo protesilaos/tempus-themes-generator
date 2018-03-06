@@ -1,11 +1,11 @@
 # vi: ft=sh
 
-# =============================================================================
+# ============================  
 # scheme: Fugit
 # scheme family: Tempus
 # description: Light, pleasant theme optimised for long writing/coding sessions (WCAG AA)
 # author: Protesilaos Stavrou (https://protesilaos.com/)
-# =============================================================================
+# ============================  
 
 # This light theme only uses the col15 and col7 values for backgrounds
 # All main values have a contrast ratio of 4.50:1 against col15 and col7 (WCAG AA)
@@ -15,7 +15,7 @@
 # col7 and col15 are mutually exclusive
 
 # Meta data
-# ------------------------------------------------------------------------------
+# ----------------------------
 tempus_theme_name='Fugit'
 tempus_theme_name_full='Tempus Fugit'
 tempus_theme_name_slug='fugit'
@@ -27,7 +27,7 @@ tempus_theme_variant='light'
 tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
 
 # Colour values (HEX)
-# ------------------------------------------------------------------------------
+# ----------------------------
 col0=4d696f        # black variant
 col1=df2014        # red variant
 col2=587d0a        # green variant
@@ -46,10 +46,11 @@ col14=046c92       # bright cyan variant
 col15=fff5f3       # bright white variant
 
 # Colour values (RGB)
-# ------------------------------------------------------------------------------
+# ----------------------------
+
 # The above HEX values are converted into decimal format
 col0rgb=$(printf "%d,%d,%d" 0x${col0:0:2} 0x${col0:2:2} 0x${col0:4:2})
-col1rgb=$(printf "%d,%d,%d" 0x${col11:0:2} 0x${col11:2:2} 0x${col11:4:2})
+col1rgb=$(printf "%d,%d,%d" 0x${col1:0:2} 0x${col1:2:2} 0x${col1:4:2})
 col2rgb=$(printf "%d,%d,%d" 0x${col2:0:2} 0x${col2:2:2} 0x${col2:4:2})
 col3rgb=$(printf "%d,%d,%d" 0x${col3:0:2} 0x${col3:2:2} 0x${col3:4:2})
 col4rgb=$(printf "%d,%d,%d" 0x${col4:0:2} 0x${col4:2:2} 0x${col4:4:2})
@@ -66,7 +67,8 @@ col14rgb=$(printf "%d,%d,%d" 0x${col14:0:2} 0x${col14:2:2} 0x${col14:4:2})
 col15rgb=$(printf "%d,%d,%d" 0x${col15:0:2} 0x${col15:2:2} 0x${col15:4:2})
 
 # Terminal values
-# ------------------------------------------------------------------------------
+# ----------------------------
+
 # Palette values corresponding to terminal codes followed by termcol description
 ccol0=0            # black
 ccol1=1            # red
@@ -86,7 +88,7 @@ ccol14=14          # brcyan
 ccol15=15          # brwhite
 
 # Base values
-# ------------------------------------------------------------------------------
+# ----------------------------
 
 # HEX base values
 colbg=$col15       # Background
