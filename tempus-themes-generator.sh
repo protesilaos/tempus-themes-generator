@@ -98,7 +98,7 @@ tempus_generator_no_argument ()
 # accepts a single parameter, so it can be invoked from another function
 tempus_scheme_get_hex ()
 {
-    local hex_palette=$(cat "$tempus_themes_generator_dir/schemes/$generator_cli_scheme" | grep -o '^col[0-9]*=[0-9a-zA-Z]*')
+    local hex_palette=$(grep -o '^col[0-9]*=[0-9a-zA-Z]*' $tempus_themes_generator_dir/schemes/$generator_cli_scheme )
 
     # XXX HELP can this be done better? i.e. not loop and break loop?
     for i in $hex_palette; do
@@ -160,7 +160,7 @@ tempus_scheme_print_ansi ()
         sequences+="${concat1}${i};rgb:$(tempus_scheme_get_hex_as_rgb ${a})${concat2}${i}${concat3} col${a}${concat4}"
     done
 
-    printf "$sequences"
+    echo -e "$sequences"
 
     # reset the preview colours to the running terminal's defaults
     # XXX HELP for usability, a better `sleep` value to reset colours?
@@ -273,7 +273,7 @@ tempus_parse_template ()
         local template_path=$tempus_themes_generator_dir/templates/$generator_cli_template
 
         # create a temporary file where the variables are expanded
-        tempfile=`mktemp`
+        tempfile=$(mktemp)
 
         (
             echo 'cat <<END_OF_TEXT'
@@ -282,7 +282,7 @@ tempus_parse_template ()
         ) > $tempfile
         . $tempfile
 
-        rm -f $tempfile # Clean up the temporary file
+        rm -f "$tempfile" # Clean up the temporary file
     else
         echo "ERROR: $generator_cli_template is not a template"
         echo "Run this script without arguments to get instructions"
@@ -305,15 +305,15 @@ elif [[ $# -eq 1 ]]; then
         echo -e "For context, see this script's source code\n"
         tempus_scheme_print_col_specs
     else
+        echo "ERROR: $generator_cli_scheme is not a scheme"
         exit 1
     fi
 elif [[ $# -eq 2 ]]; then
-    tempus_parse_template $1 $2
+    tempus_parse_template "$1" "$2"
 else
     echo -e "ERROR: too many arguments.\nExecute the script without any arguments to get usage instructions."
     exit 1
 fi
-
 
 # ANNEX
 # ============================
