@@ -50,7 +50,7 @@ Run the script with the necessary arguments:
 ./tempus-themes-generator.sh [scheme] [template]
 ```
 
-These are the commands for finding the available arguments:
+These are the commands for finding the available arguments (lines starting with `#` are comments):
 
 ```sh
 # List `scheme` options
@@ -59,6 +59,11 @@ ls schemes
 # List `template` options
 ls templates
 ```
+
+Tips:
+
+- Running the script without an argument will print a detailed help message.
+- Passing a scheme name as the sole argument will print a timed preview of the scheme's palette.
 
 ### Examples
 

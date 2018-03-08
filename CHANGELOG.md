@@ -4,9 +4,18 @@
 
 *NOTE. No release tags are made available. While this script 'works' for my limited use case, it is not tested for widespread us..*
 
+## 0.12.0.20180308
+
+Rewrote the `tempus-themes-generator.sh`. No breaking changes, even though the script was written anew. The new script offers some extra features compared to the original: 
+
+1. running the script without any argument will print a detailed help message
+2. passing a scheme name as a single argument will print a timed preview to the terminal's output
+
+Otherwise, the script has been made to leverage Bash functions and, in general, is more robust to handling errors. Also, it is heavily documented to help any contributors with familiarising themselves with what is going on. Still, there are areas it could be improved further. These are noted in the inline comments.
+
 ## 0.11.0.20180306
 
-ADDED. `dawn` and `dusk`, a light and a dark scheme with a blue-ish, slightly desaturated palette. Both are WCAG AA compliant.
+ADDED. `dawn` and `dusk`, a light and a dark scheme with a slightly desaturated palette. Both are WCAG AA compliant.
 
 FIXED. An error in the rgb conversion of the colour values, where col1 (red) was erroneously defined as col11 (bright yellow).
 
