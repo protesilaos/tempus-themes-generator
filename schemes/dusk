@@ -1,47 +1,54 @@
 # vi: ft=sh
 
 # ============================  
-# scheme: Warp
+# scheme: Dusk
 # scheme family: Tempus
-# description: Dark theme with a vibrant palette
+# description: Dark theme with a deep blue-ish, slightly desaturated palette
 # author: Protesilaos Stavrou (https://protesilaos.com/)
 # ============================  
 
-# This dark theme only uses the col0 and col8 values for backgrounds
-# All main values have a contrast ratio of 4.50:1 against col0 and col8 (WCAG AA)
-# All bright values have a contrast ratio of 5.50:1 against col0 and col8 (WCAG AA)
-# Exception is col8 on col0 or vice versa (these two are mutually exclusive)
+# This dark theme only uses the col0 and col8 values for backgrounds.
+# The rest are foreground values, subdivided in proper and bright variants.
+
+# All main values have a contrast ratio of 5.50:1 against col0 (WCAG AA).
+# All main values have a contrast ratio of 4.50:1 against col8 (WCAG AA).
+
+# All bright values have a contrast ratio of 6.50:1 against col0 (WCAG AA).
+# All bright values have a contrast ratio of 5.32:1 against col8 (WCAG AA).
+
+# All fgs can be used as bgs, provided their fg is either col0 or col8.
+# Example: col1 as background with col0 as foreground (5.50:1 contrast).
 
 # Meta data
 # ----------------------------
-tempus_theme_name='Warp'
-tempus_theme_name_full='Tempus Warp'
-tempus_theme_name_slug='warp'
-tempus_theme_name_slug_full='tempus-warp'
-tempus_theme_name_slug_full_underscore='tempus_warp'
-tempus_theme_description='Dark theme with a vibrant palette (WCAG AA compliant)'
+tempus_theme_name='Dusk'
+tempus_theme_name_full='Tempus Dusk'
+tempus_theme_name_slug='dusk'
+tempus_theme_name_slug_full='tempus-dusk'
+tempus_theme_name_slug_full_underscore='tempus_dusk'
+tempus_theme_description='Dark theme with a deep blue-ish, slightly desaturated palette.'
 tempus_theme_wcag='WCAG AA'
 tempus_theme_variant='dark'
 tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
 
 # Colour values (HEX)
 # ----------------------------
-col0=141a19       # black variant
-col1=ff1414       # red variant
-col2=009600       # green variant
-col3=928100       # yellow variant
-col4=4f76ff       # blue variant
-col5=dd38bc       # magenta variant
-col6=358aaa       # cyan variant
-col7=927b80       # white variant
-col8=201428       # bright black variant
-col9=ff5500       # bright red variant
-col10=3aa43a      # bright green variant
-col11=b38a00      # bright yellow variant
-col12=8082ff      # bright blue variant
-col13=d159fd      # bright magenta variant
-col14=1da190      # bright cyan variant
-col15=928f90      # bright white variant
+col0=1f252d       # black variant
+col1=cb8d56       # red variant
+col2=8ba089       # green variant
+col3=a79c46       # yellow variant
+col4=8c9abe       # blue variant
+col5=b190af       # magenta variant
+col6=8e9aba       # cyan variant
+col7=a29899       # white variant
+col8=2c3150       # bright black variant
+col9=d39d74       # bright red variant
+col10=80b48f      # bright green variant
+col11=bda75a      # bright yellow variant
+col12=9ca5de      # bright blue variant
+col13=c69ac6      # bright magenta variant
+col14=8caeb6      # bright cyan variant
+col15=a2a8ba      # bright white variant
 
 # Colour values (RGB)
 # ----------------------------

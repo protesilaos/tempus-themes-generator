@@ -1,46 +1,54 @@
 # vi: ft=sh
 
-# ============================  
-# scheme: Totus
+# ============================== 
+# scheme: Dawn
 # scheme family: Tempus
-# description: Light theme for prose or for coding in an open space
+# description: Light theme with a soft, slightly desaturated palette
 # author: Protesilaos Stavrou (https://protesilaos.com/)
-# ============================  
+# ============================== 
 
-# This light theme only uses the col15 and col7 values for backgrounds
-# All colours have a contrast ratio of 7.00:1 against col15 and col7 (WCAG AAA)
-# Exception is col7 on col15 or vice versa (these two are mutually exclusive)
+# This dark theme only uses the col15 and col7 values for backgrounds.
+# The rest are foreground values, subdivided in proper and bright variants.
+
+# All main values have a contrast ratio of 6.50:1 against col15 (WCAG AA).
+# All main values have a contrast ratio of 5.32:1 against col7 (WCAG AA).
+
+# All bright values have a contrast ratio of 5.50:1 against col15 (WCAG AA).
+# All bright values have a contrast ratio of 4.50:1 against col7 (WCAG AA).
+
+# All fgs can be used as bgs, provided their fg is either col15 or col7.
+# Example: col1 as background with col15 as foreground (6.50:1 contrast).
 
 # Meta data
-# ----------------------------
-tempus_theme_name='Totus'
-tempus_theme_name_full='Tempus Totus'
-tempus_theme_name_slug='totus'
-tempus_theme_name_slug_full='tempus-totus'
-tempus_theme_name_slug_full_underscore='tempus_totus'
-tempus_theme_description='Light theme for prose or for coding in an open space (WCAG AAA compliant)'
-tempus_theme_wcag='WCAG AAA'
+# ------------------------------ 
+tempus_theme_name='Dawn'
+tempus_theme_name_full='Tempus Dawn'
+tempus_theme_name_slug='dawn'
+tempus_theme_name_slug_full='tempus-dawn'
+tempus_theme_name_slug_full_underscore='tempus_dawn'
+tempus_theme_description='Light theme with a soft, slightly desaturated palette'
+tempus_theme_wcag='WCAG AA'
 tempus_theme_variant='light'
 tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
 
 # Colour values (HEX)
-# ----------------------------
-col0=52505e        # black variant
-col1=a01c10        # red variant
-col2=0b5d46        # green variant
-col3=545422        # yellow variant
-col4=1c4f9f        # blue variant
-col5=942166        # magenta variant
-col6=185870        # cyan variant
-col7=ecf3f3        # white variant
-col8=575050        # bright black variant
-col9=913210        # bright red variant
-col10=2a5d08       # bright green variant
-col11=774611       # bright yellow variant
-col12=5440a7       # bright blue variant
-col13=8d0e9b       # bright magenta variant
-col14=0e577b       # bright cyan variant
-col15=f4f1f0       # bright white variant
+# ------------------------------ 
+col0=53575a       # black variant
+col1=9b3132       # red variant
+col2=306130       # green variant
+col3=73500a       # yellow variant
+col4=4c547e       # blue variant
+col5=883c64       # magenta variant
+col6=186060       # cyan variant
+col7=dedae9       # white variant
+col8=735e3f       # bright black variant
+col9=9b474d       # bright red variant
+col10=4e6938      # bright green variant
+col11=8e5319      # bright yellow variant
+col12=5c5d8c      # bright blue variant
+col13=a24055      # bright magenta variant
+col14=2d6978      # bright cyan variant
+col15=f3f1f5      # bright white variant
 
 # Colour values (RGB)
 # ----------------------------
@@ -63,29 +71,29 @@ col13rgb=$(printf "%d,%d,%d" 0x${col13:0:2} 0x${col13:2:2} 0x${col13:4:2})
 col14rgb=$(printf "%d,%d,%d" 0x${col14:0:2} 0x${col14:2:2} 0x${col14:4:2})
 col15rgb=$(printf "%d,%d,%d" 0x${col15:0:2} 0x${col15:2:2} 0x${col15:4:2})
 
-# Terminal values
-# ----------------------------
+# Terminal base values
+# ------------------------------ 
 
 # Palette values corresponding to terminal codes followed by termcol description
-ccol0=0            # black
-ccol1=1            # red
-ccol2=2            # green
-ccol3=3            # yellow
-ccol4=4            # blue
-ccol5=5            # magenta
-ccol6=6            # cyan
-ccol7=7            # white
-ccol8=8            # brblack
-ccol9=9            # brred
-ccol10=10          # brgreen
-ccol11=11          # bryellow
-ccol12=12          # brblue
-ccol13=13          # brmagenta
-ccol14=14          # brcyan
-ccol15=15          # brwhite
+ccol0=0           # black
+ccol1=1           # red
+ccol2=2           # green
+ccol3=3           # yellow
+ccol4=4           # blue
+ccol5=5           # magenta
+ccol6=6           # cyan
+ccol7=7           # white
+ccol8=8           # brblack
+ccol9=9           # brred
+ccol10=10         # brgreen
+ccol11=11         # bryellow
+ccol12=12         # brblue
+ccol13=13         # brmagenta
+ccol14=14         # brcyan
+ccol15=15         # brwhite
 
 # Base values
-# ----------------------------
+# ------------------------------ 
 
 # HEX base values
 colbg=$col15       # Background
