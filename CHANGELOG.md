@@ -4,6 +4,10 @@
 
 *NOTE. No release tags are made available. While this script 'works' for my limited use case, it is not tested for widespread us..*
 
+## 0.13.0.20180315
+
+Changes to `st` template to be consistent with st 0.8 (released 2018-03-14).
+
 ## 0.12.0.20180308
 
 Rewrote the `tempus-themes-generator.sh`. No breaking changes, even though the script was written anew. The new script offers some extra features compared to the original: 

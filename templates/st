@@ -1,5 +1,5 @@
 # vi: ft=c
-const char *colorname[] = {
+static const char *colorname[] = {
     "#${col0}",
     "#${col1}",
     "#${col2}",
@@ -18,12 +18,13 @@ const char *colorname[] = {
     "#${col15}",
 };
 
-/* Default cols (colname index)
- * foreground, background, cursor */
+/* Default colors (colorname index)
+ * foreground, background, cursor, reverse cursor
+ */
 unsigned int defaultbg = $ccolbg;
 unsigned int defaultfg = $ccolfg;
-unsigned int defaultcs = $ccolcr;
-unsigned int defaultrcs = $ccolbg;
-unsigned int mousefg = $ccolfgalt;
-unsigned int mousebg = $ccolbgalt;
+static unsigned int defaultcs = $ccolcr;
+static unsigned int defaultrcs = $ccolbg;
+static unsigned int mousefg = $ccolfgalt;
+static unsigned int mousebg = $ccolbgalt;
 
