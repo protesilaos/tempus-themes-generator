@@ -3,7 +3,7 @@
 # ============================  
 # scheme: Tempest
 # scheme family: Tempus
-# description: A green-scale, subdued theme for late night hackers
+# description: A green-scale, subtle theme for late night hackers
 # author: Protesilaos Stavrou (https://protesilaos.com/)
 # ============================  
 
@@ -26,7 +26,7 @@ tempus_theme_name_full='Tempus Tempest'
 tempus_theme_name_slug='tempest'
 tempus_theme_name_slug_full='tempus-tempest'
 tempus_theme_name_slug_full_underscore='tempus_tempest'
-tempus_theme_description='A green-scale, subdued theme for late night hackers (WCAG AAA compliant).'
+tempus_theme_description='A green-scale, subtle theme for late night hackers (WCAG AAA compliant).'
 tempus_theme_wcag='WCAG AAA'
 tempus_theme_variant='dark'
 tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
