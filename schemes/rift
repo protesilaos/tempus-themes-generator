@@ -7,10 +7,14 @@
 # author: Protesilaos Stavrou (https://protesilaos.com/)
 # ============================  
 
-# This dark theme only uses the col0 and col8 values for backgrounds
-# All main values have a contrast ratio of 4.50:1 against col0 and col8 (WCAG AA)
-# All bright values have a contrast ratio of 5.50:1 against col0 and col8 (WCAG AA)
-# Exception is col8 on col0 or vice versa (these two are mutually exclusive)
+# This dark theme only uses the col0 and col8 values for backgrounds.
+# All other colours are foreground values.
+
+# All fgs have a contrast ratio of >= 4.50:1 (WCAG AA) against the bgs.
+# Exception is col8 on col0 or vice versa (these are mutually exclusive)
+
+# It is possible to use foregrounds as backgrounds, by reversing the above.
+# DO NOT blend foregrounds together. The contrast ratio is sub-standard.
 
 # Meta data
 # ----------------------------
@@ -26,22 +30,22 @@ tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
 
 # Colour values (HEX)
 # ----------------------------
-col0=2b353c       # black variant
-col1=be9604       # red variant
-col2=0eb40e       # green variant
-col3=79aa00       # yellow variant
-col4=00acb3       # blue variant
-col5=ba964c       # magenta variant
-col6=5fa98f       # cyan variant
-col7=ab9699       # white variant
-col8=3d3038       # bright black variant
-col9=bdae13       # bright red variant
-col10=3ac53a      # bright green variant
-col11=9ab800      # bright yellow variant
-col12=20bdce      # bright blue variant
-col13=cca57a      # bright magenta variant
-col14=6fb9ae      # bright cyan variant
-col15=abacac      # bright white variant
+col0=162c22       # black variant
+col1=c19904       # red variant
+col2=34b534       # green variant
+col3=7fad00       # yellow variant
+col4=30aeb0       # blue variant
+col5=c8954c       # magenta variant
+col6=5fad8f       # cyan variant
+col7=ab9aa9       # white variant
+col8=283431       # bright black variant
+col9=d2a634       # bright red variant
+col10=6ac134      # bright green variant
+col11=82bd00      # bright yellow variant
+col12=56bdad      # bright blue variant
+col13=cca0ba      # bright magenta variant
+col14=10c480      # bright cyan variant
+col15=bbbcbc      # bright white variant
 
 # Colour values (RGB)
 # ----------------------------

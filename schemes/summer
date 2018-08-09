@@ -7,9 +7,14 @@
 # author: Protesilaos Stavrou (https://protesilaos.com/)
 # ============================  
 
-# This dark theme only uses the col0 and col8 values for backgrounds
-# All colours have a contrast ratio of 4.50:1 against col0 and col8 (WCAG AA)
-# Exception is col8 on col0 or vice versa (these two are mutually exclusive)
+# This dark theme only uses the col0 and col8 values for backgrounds.
+# All other colours are foreground values.
+
+# All fgs have a contrast ratio of >= 4.50:1 (WCAG AA) against the bgs.
+# Exception is col8 on col0 or vice versa (these are mutually exclusive)
+
+# It is possible to use foregrounds as backgrounds, by reversing the above.
+# DO NOT blend foregrounds together. The contrast ratio is sub-standard.
 
 # Meta data
 # ----------------------------
@@ -25,22 +30,22 @@ tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
 
 # Colour values (HEX)
 # ----------------------------
-col0=293345       # black variant
-col1=fe6d32       # red variant
-col2=6ba86d       # green variant
+col0=202c3d       # black variant
+col1=ff6c38       # red variant
+col2=4eac6d       # green variant
 col3=af9a0a       # yellow variant
-col4=679ed7       # blue variant
-col5=bc8ab6       # magenta variant
-col6=6ea590       # cyan variant
+col4=3aaaa4       # blue variant
+col5=9c90dd       # magenta variant
+col6=3dab93       # cyan variant
 col7=a39799       # white variant
 col8=352f49       # bright black variant
-col9=df8251       # bright red variant
-col10=7aa747      # bright green variant
-col11=ba953a      # bright yellow variant
-col12=3ba1e8      # bright blue variant
+col9=eb7b4d       # bright red variant
+col10=57ad47      # bright green variant
+col11=bd951a      # bright yellow variant
+col12=5aa1d4      # bright blue variant
 col13=c97ed7      # bright magenta variant
-col14=52a6b1      # bright cyan variant
-col15=9b999e      # bright white variant
+col14=29ad8d      # bright cyan variant
+col15=a0abae      # bright white variant
 
 # Colour values (RGB)
 # ----------------------------
