@@ -1,0 +1,29 @@
+# vi: ft=yaml
+- name: "${tempus_theme_name_full}"
+  slug: "${tempus_theme_name_slug_full}"
+  slugunderscore: "${tempus_theme_name_slug_full_underscore}"
+  author: "${tempus_theme_author}"
+  description: "${tempus_theme_description}"
+  col0: "${col0}" # black variant
+  col1: "${col1}" # red variant
+  col2: "${col2}" # green variant
+  col3: "${col3}" # yellow variant
+  col4: "${col4}" # blue variant
+  col5: "${col5}" # magenta variant
+  col6: "${col6}" # cyan variant
+  col7: "${col7}" # white variant
+  col8: "${col8}" # bright black variant
+  col9: "${col9}" # bright red variant
+  col10: "${col10}" # bright green variant
+  col11: "${col11}" # bright yellow variant
+  col12: "${col12}" # bright blue variant
+  col13: "${col13}" # bright magenta variant
+  col14: "${col14}" # bright cyan variant
+  col15: "${col15}" # bright white variant
+  colvr: "${tempus_theme_variant}" # light or dark
+  colbg: "${colbg}" # main background
+  colbgalt: "${colbgalt}" # alternative background
+  colfg: "${colfg}" # main foreground
+  colfgalt: "${colfgalt}" # alternative foreground
+  colcr: "${colcr}" # cursor background
+  colcr2: "${colcr2}" # cursor foreground
