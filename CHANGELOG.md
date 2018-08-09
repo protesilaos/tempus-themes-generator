@@ -2,7 +2,33 @@
 
 *Latest version is at the top. Versioning follows semver specs, with the date appended in the form of YYMMDD.*
 
-*NOTE. No release tags are made available. While this script 'works' for my limited use case, it is not tested for widespread us..*
+*NOTE. No actual release tags are made available. While this script 'works' for my limited use case, it is not tested for widespread use, nor is it a technically good piece of programming.*
+
+## 0.17.0.20180809
+
+UPDATE. Reviewed schemes. Refined colours of older items for improved presentation, while keeping with each one's character. Affected schemes:
+
+- autumn
+- fugit
+- future
+- past
+- rift
+- spring
+- summer
+- totus
+- warp
+- winter
+
+## 0.16.0.20180807
+ADDED. `tempest` a dark, green-scale theme. WCAG AAA.
+
+## 0.15.0.20180708
+
+UPDATE. Completed migration to Gitlab. Updated links.
+
+## 0.14.0.20180708
+
+ADDED. `day` (WCAG AA), `night` (WCAG AAA).
 
 ## 0.13.0.20180315
 
