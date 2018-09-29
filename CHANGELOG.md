@@ -4,6 +4,10 @@
 
 *NOTE. No actual release tags are made available. While this script 'works' for my limited use case, it is not tested for widespread use, nor is it a technically good piece of programming.*
 
+## 0.18.0.20180929
+
+ADDED. `classic`, a dark theme with warm hues. WCAG AA.
+
 ## 0.17.0.20180809
 
 UPDATE. Reviewed schemes. Refined colours of older items for improved presentation, while keeping with each one's character. Affected schemes:
