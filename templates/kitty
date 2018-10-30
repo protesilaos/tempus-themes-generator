@@ -1,0 +1,40 @@
+# vi:ft=conf
+
+# theme: ${tempus_theme_name_full}
+# author: ${tempus_theme_author}
+# description: ${tempus_theme_description}
+
+cursor #${colcr}
+cursor_text_color background
+url_color #${col4}
+
+active_border_color #${colfgalt}
+inactive_border_color #${colbgalt}
+bell_border_color #${col11}
+
+active_tab_foreground #${col2}
+active_tab_background #${colbgalt}
+inactive_tab_foreground #${colfgalt}
+inactive_tab_background #${colbg}
+
+foreground #${colfg}
+background #${colbg}
+selection_foreground #${colbg}
+selection_background #${colfg}
+
+color0 #${col0}
+color1 #${col1}
+color2 #${col2}
+color3 #${col3}
+color4 #${col4}
+color5 #${col5}
+color6 #${col6}
+color7 #${col7}
+color8 #${col8}
+color9 #${col9}
+color10 #${col10}
+color11 #${col11}
+color12 #${col12}
+color13 #${col13}
+color14 #${col14}
+color15 #${col15}
