@@ -5,7 +5,7 @@
 # description: ${tempus_theme_description}
 
 cursor #${colcr}
-cursor_text_color background
+cursor_text_color #${colcr2}
 url_color #${col4}
 
 active_border_color #${colfgalt}
