@@ -14,7 +14,7 @@
     # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # Tempus Themes Generator
-# https://github.com/protesilaos/tempus-themes-generator
+# https://gitlab.com/protesilaos/tempus-themes-generator
 
 # Parses a data file through a defined template to output a Tempus Theme.
 # Results are printed to stdout (standard terminal output).
@@ -27,7 +27,7 @@
 # ./tempus-themes-generator.sh winter vim > ~/tempus_winter.vim
 
 # For instructions and the appropriate file name extensions --> README
-# https://github.com/protesilaos/tempus-themes-generator/blob/master/README.md
+# https://gitlab.com/protesilaos/tempus-themes-generator/blob/master/README.md
 
 # Tempus is a collection of themes for terminals and text editors.
 # All themes comply, at minimum, with the WCAG AA accessibility standard for colour contrast.
@@ -40,7 +40,7 @@
 # ============================== 
 
 # define path to the generator repo
-# git clone --depth 1 https://github.com/protesilaos/tempus-themes-generator ~/tempus-themes-generator
+# git clone --depth 1 https://gitlab.com/protesilaos/tempus-themes-generator ~/tempus-themes-generator
 tempus_themes_generator_dir="$HOME/tempus-themes-generator"
 
 # define array with schemes
@@ -89,7 +89,7 @@ tempus_generator_no_argument ()
         $ \e[1;32mls templates\e[0m
 
 \e[3m# For detailed instructions, refer to the README\e[0m
-\e[3m# https://github.com/protesilaos/tempus-themes-generator/blob/master/README.md\e[0m
+\e[3m# https://gitlab.com/protesilaos/tempus-themes-generator/blob/master/README.md\e[0m
 "
 }
 

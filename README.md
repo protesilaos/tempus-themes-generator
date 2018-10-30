@@ -1,6 +1,6 @@
 # Tempus Themes Generator
 
-A nimble tool to automate the process of exporting the [Tempus colour schemes](https://github.com/protesilaos/tempus-themes) into a variety of file formats.
+A nimble tool to automate the process of exporting the [Tempus colour schemes](https://gitlab.com/protesilaos/tempus-themes) into a variety of file formats.
 
 *Tempus* is a collection of themes for Vim, text editors, and terminal emulators that are *at minimum* compliant with the WCAG AA accessibility standard for colour contrast.
 
@@ -14,6 +14,7 @@ The generator consists of a bash script which parses the sets of variables of ea
 - [Applying the themes](#applying-the-themes) 
     - [Template-specific repositories](#template-specific-repositories) 
     - [GTK3 Source View](#gtk3-source-view)
+    - [Kitty](#kitty)
     - [Konsole](#konsole)
     - [Tilix](#tilix) 
     - [URxvt (Rxvt-Unicode)](#urxvt-rxvt-unicode) 
@@ -33,7 +34,7 @@ The generator consists of a bash script which parses the sets of variables of ea
 Start by cloning the repo:
 
 ```sh
-git clone https://github.com/protesilaos/tempus-themes-generator.git --depth 1
+git clone https://gitlab.com/protesilaos/tempus-themes-generator.git --depth 1
 ```
 
 Then enter the directory: 
@@ -103,15 +104,16 @@ Each application uses a different set of conventions. Below are some tried and t
 
 ### Template-specific repositories
 
-Before trying to do things manually, you may want to check out the following repos with pre-built ports. Some of these even have packages for Arch Linux (through the Arch User Repository).
+Before trying to do things manually, you may want to check out the following repos with pre-built ports.
 
-- [Tempus themes **GTK3 Source View**](https://github.com/protesilaos/tempus-themes-gtksourceview3)
-- [Tempus themes **Konsole**](https://github.com/protesilaos/tempus-themes-konsole)
-- [Tempus themes **Tilix**](https://github.com/protesilaos/tempus-themes-tilix)
-- [Tempus themes **URxvt**](https://github.com/protesilaos/tempus-themes-urxvt)
-- [Tempus themes **Vim plugin**](https://github.com/protesilaos/tempus-themes-vim)
-- [Tempus themes **Xfce4 terminal**](https://github.com/protesilaos/tempus-themes-xfce4-terminal)
-- [Tempus themes **Xterm**](https://github.com/protesilaos/tempus-themes-xterm)
+- [Tempus themes **GTK3 Source View**](https://gitlab.com/protesilaos/tempus-themes-gtksourceview3)
+- [Tempus themes **Kitty**](https://gitlab.com/protesilaos/tempus-themes-kitty)
+- [Tempus themes **Konsole**](https://gitlab.com/protesilaos/tempus-themes-konsole)
+- [Tempus themes **Tilix**](https://gitlab.com/protesilaos/tempus-themes-tilix)
+- [Tempus themes **URxvt**](https://gitlab.com/protesilaos/tempus-themes-urxvt)
+- [Tempus themes **Vim plugin**](https://gitlab.com/protesilaos/tempus-themes-vim)
+- [Tempus themes **Xfce4 terminal**](https://gitlab.com/protesilaos/tempus-themes-xfce4-terminal)
+- [Tempus themes **Xterm**](https://gitlab.com/protesilaos/tempus-themes-xterm)
 
 ### GTK3 Source View
 
@@ -133,6 +135,14 @@ mkdir -p ~/.local/share/gtksourceview-3.0/styles/
 ```
 
 The theme will then be available from the supported app's preferences window.
+
+### Kitty
+
+By default all of Kitty's theme-releated options are defined in a single
+configuration file.  As such, I recommend you read the
+[tempus-themes-kitty
+README](https://gitlab.com/protesilaos/tempus-themes-kitty/blob/master/README.md)
+and adapt accordingly.
 
 ### Konsole
 
@@ -274,27 +284,27 @@ colorscheme tempus_winter
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/protesilaos/tempus-themes-generator/blob/master/CONTRIBUTING.md)
+See [CONTRIBUTING.md](https://gitlab.com/protesilaos/tempus-themes-generator/blob/master/CONTRIBUTING.md)
 
 ## Changelog
 
-Refer to the [CHANGELOG.md](https://github.com/protesilaos/tempus-themes-generator/blob/master/CHANGELOG.md)
+Refer to the [CHANGELOG.md](https://gitlab.com/protesilaos/tempus-themes-generator/blob/master/CHANGELOG.md)
 
 ## Additional resources
 
-For a hub with all available ports, see the main [Tempus themes repo](https://github.com/protesilaos/tempus-themes).
+For a hub with all available ports, see the main [Tempus themes repo](https://gitlab.com/protesilaos/tempus-themes).
 
 ## License
 
 GNU General Public License Version 3. 
 
-See [LICENSE](https://github.com/protesilaos/tempus-themes-generator/gblob/master/LICENSE)
+See [LICENSE](https://gitlab.com/protesilaos/tempus-themes-generator/gblob/master/LICENSE)
 
 ## Meta
 
-The Tempus themes project consists of a number of repositories. It is maintained with a set of scripts and utilities, stored in the [tempus-themes-utils](https://github.com/protesilaos/tempus-themes-utils).
+The Tempus themes project consists of a number of repositories. It is maintained with a set of scripts and utilities, stored in the [tempus-themes-utils](https://gitlab.com/protesilaos/tempus-themes-utils).
 
-All theme files are created with the [Tempus themes generator](https://github.com/protesilaos/tempus-themes-generator). See the generator CONTRIBUTING.md.
+All theme files are created with the [Tempus themes generator](https://gitlab.com/protesilaos/tempus-themes-generator). See the generator CONTRIBUTING.md.
 
 ## Donations
 

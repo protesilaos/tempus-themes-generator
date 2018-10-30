@@ -4,6 +4,16 @@
 
 *NOTE. No actual release tags are made available. While this script 'works' for my limited use case, it is not tested for widespread use, nor is it a technically good piece of programming.*
 
+## 0.19.0.20181030 
+
+1. Fix links that used to point to the old git URL.  The Tempus Themes
+   are all hosted on GitLab.
+2. Restyle the documents so that hard lines are in place of visual
+   wrapping.  Markdown processors such as Kramdown recognise hard breaks
+   as part of a contiguous paragraph.  So seeing this as rendered HTML
+   should be no different.
+3. Add support for the `Kitty` terminal emulator.
+
 ## 0.18.0.20180929
 
 ADDED. `classic`, a dark theme with warm hues. WCAG AA.
@@ -67,7 +77,7 @@ Now every item under `schemes` converts HEX colours to RGB using shell variable 
 
 ## 0.8.1.20180224
 
-Add template for shell variables. There are no instructions for this, just as with the `yaml` template. The idea is that this generates a generic file that can be used in some custom setup. For a working example, see my dmenu* wrapper scripts from [my dotfiles](https://github.com/protesilaos/fotfiles) (search them under `bin` and then follow the path they reference).
+Add template for shell variables. There are no instructions for this, just as with the `yaml` template. The idea is that this generates a generic file that can be used in some custom setup. For a working example, see my dmenu* wrapper scripts from [my dotfiles](https://gitlab.com/protesilaos/fotfiles) (search them under `bin` and then follow the path they reference).
 
 ## 0.8.0.20180224
 
@@ -99,7 +109,7 @@ Ultimately, styling Atom is a rather inelegant, tedious piece of work. For the t
 
 ## 0.7.0.20180213
 
-~~Initial support for Atom editor syntax theme packages. Not all `atom-*` templates expand generator variables. They are just located here to build a complete package from a single source. For a script that builds these packages refer to the `export-atom.sh` in the [tempus-themes-utils](https://github.com/protesilaos/tempus-themes-utils) repository.~~
+~~Initial support for Atom editor syntax theme packages. Not all `atom-*` templates expand generator variables. They are just located here to build a complete package from a single source. For a script that builds these packages refer to the `export-atom.sh` in the [tempus-themes-utils](https://gitlab.com/protesilaos/tempus-themes-utils) repository.~~
 
 Remove support for Atom. See version `0.7.1.20180213`.
 
