@@ -4,6 +4,40 @@
 
 *NOTE. No actual release tags are made available. While this script 'works' for my limited use case, it is not tested for widespread use, nor is it a technically good piece of programming.*
 
+## 0.20.0.20181031 
+
+Update `st` template to use custom colour references for the default
+values for background, foreground, cursor, and mouse.
+
+Here is the comment included in the template, in case some advanced user
+is interested about the rationale:
+
+    /*
+     * PRO TIP: this is good when trying to dynamically change from a
+     * dark to a light theme or vice versa using ANSI escape sequences.
+     *
+     * Scenario:
+     *
+     * If on a dark theme we set defaultbg = 0 (with 15 being the
+     * defaultfg), then changing the value of '0' to what would be
+     * appropriate for a light theme (e.g. #ffffff) would turn the
+     * background white, when what we really wanted was to alter the
+     * foreground.
+     * That is because the assumption for the design of the Tempus
+     * themes is that colour codes represent colours.  So if a light
+     * theme needs a black foregound, it must use color0.  Whereas
+     * others default to defining the value of color0 as equivalent to
+     * background regardless of the colour value (and color15 as the
+     * foreground in the same way).  I think this is semantically
+     * incorrect and might cause problems.
+     *
+     * For working examples, see my dotfiles, specifically the
+     * `own_script_update_running_terminals` under the "bin" directory:
+     * https://gitlab.com/protesilaos/dotfiles.  Note that this script
+     * is invoked from the `own_script_update_environment_theme`, which
+     * is typically interfaced via the `tempusmenu`.
+     */
+
 ## 0.19.0.20181030 
 
 1. Fix links that used to point to the old git URL.  The Tempus Themes

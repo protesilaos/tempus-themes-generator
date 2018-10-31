@@ -1,30 +1,65 @@
 # vi: ft=c
+/* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    "#${col0}",
-    "#${col1}",
-    "#${col2}",
-    "#${col3}",
-    "#${col4}",
-    "#${col5}",
-    "#${col6}",
-    "#${col7}",
-    "#${col8}", 
-    "#${col9}", 
-    "#${col10}",
-    "#${col11}",
-    "#${col12}",
-    "#${col13}",
-    "#${col14}",
-    "#${col15}",
+    /* 8 normal colors */
+    [0] = "#${col0}",
+    [1] = "#${col1}",
+    [2] = "#${col2}",
+    [3] = "#${col3}",
+    [4] = "#${col4}",
+    [5] = "#${col5}",
+    [6] = "#${col6}",
+    [7] = "#${col7}",
+
+    /* 8 bright colors */
+    [8] = "#${col8}", 
+    [9] = "#${col9}", 
+    [10] = "#${col10}",
+    [11] = "#${col11}",
+    [12] = "#${col12}",
+    [13] = "#${col13}",
+    [14] = "#${col14}",
+    [15] = "#${col15}",
+
+    /* more colors can be added after 255 to use with DefaultXX */
+
+    /*
+     * PRO TIP: this is good when trying to dynamically change from a
+     * dark to a light theme or vice versa using ANSI escape sequences.
+     *
+     * Scenario:
+     *
+     * If on a dark theme we set defaultbg = 0 (with 15 being the
+     * defaultfg), then changing the value of '0' to what would be
+     * appropriate for a light theme (e.g. #ffffff) would turn the
+     * background white, when what we really wanted was to alter the
+     * foreground.
+     * That is because the assumption for the design of the Tempus
+     * themes is that colour codes represent colours.  So if a light
+     * theme needs a black foregound, it must use color0.  Whereas
+     * others default to defining the value of color0 as equivalent to
+     * background regardless of the colour value (and color15 as the
+     * foreground in the same way).  I think this is semantically
+     * incorrect and might cause problems.
+     *
+     * For working examples, see my dotfiles, specifically the
+     * `own_script_update_running_terminals` under the "bin" directory:
+     * https://gitlab.com/protesilaos/dotfiles.  Note that this script
+     * is invoked from the `own_script_update_environment_theme`, which
+     * is typically interfaced via the `tempusmenu`.
+     */
+    [256] = "#${colbg}",
+    [257] = "#${colfg}",
+    [258] = "#${colcr}",
+    [259] = "#${colcr2}",
 };
 
 /* Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultbg = $ccolbg;
-unsigned int defaultfg = $ccolfg;
-static unsigned int defaultcs = $ccolcr;
-static unsigned int defaultrcs = $ccolbg;
-static unsigned int mousefg = $ccolfgalt;
-static unsigned int mousebg = $ccolbgalt;
-
+unsigned int defaultbg = 256;
+unsigned int defaultfg = 257;
+static unsigned int defaultcs = 258;
+static unsigned int defaultrcs = 259;
+static unsigned int mousebg = 258;
+static unsigned int mousefg = 259;
