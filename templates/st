@@ -43,10 +43,10 @@ static const char *colorname[] = {
      * incorrect and might cause problems.
      *
      * For working examples, see my dotfiles, specifically the
-     * `own_script_update_running_terminals` under the "bin" directory:
+     * 'own_script_update_running_terminals' under the "bin" directory:
      * https://gitlab.com/protesilaos/dotfiles.  Note that this script
-     * is invoked from the `own_script_update_environment_theme`, which
-     * is typically interfaced via the `tempusmenu`.
+     * is invoked from the 'own_script_update_environment_theme', which
+     * is typically interfaced via the 'tempusmenu'.
      */
     [256] = "#${colbg}",
     [257] = "#${colfg}",
