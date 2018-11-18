@@ -6,6 +6,8 @@
 # description: ${tempus_theme_description}
 background="#${colbg}"
 foreground="#${colfg}"
+backgroundalt="#${colbgalt}"
+foregroundalt="#${colfgalt}"
 cursorColor="#${colcr}"
 cursorColor2="#${colcr2}"
 color0="#${col0}"

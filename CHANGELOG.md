@@ -4,6 +4,11 @@
 
 *NOTE. No actual release tags are made available. While this script 'works' for my limited use case, it is not tested for widespread use, nor is it a technically good piece of programming.*
 
+## 0.21.0
+
+Add "alt" variants to the foregound and background variables in
+"shell-variables".
+
 ## 0.20.0.20181031 
 
 Update `st` template to use custom colour references for the default
