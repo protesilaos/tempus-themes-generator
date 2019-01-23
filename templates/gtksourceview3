@@ -24,6 +24,7 @@
   <!-- Base values -->
   <color name="colbg" value="#${colbg}"/>
   <color name="colbgalt" value="#${colbgalt}"/>
+  <color name="colbgdim" value="#${colbgdim}"/>
   <color name="colfg" value="#${colfg}"/>
   <color name="colfgalt" value="#${colfgalt}"/>
   <color name="colcr" value="#${colcr}"/>
