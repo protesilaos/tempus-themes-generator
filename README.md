@@ -14,6 +14,7 @@ The generator consists of a bash script which parses the sets of variables of ea
 - [Applying the themes](#applying-the-themes) 
     - [Template-specific repositories](#template-specific-repositories) 
     - [GTK3 Source View](#gtk3-source-view)
+    - [GTK4 Source View](#gtk4-source-view)
     - [Kitty](#kitty)
     - [Konsole](#konsole)
     - [Tilix](#tilix) 
@@ -107,6 +108,7 @@ Each application uses a different set of conventions. Below are some tried and t
 Before trying to do things manually, you may want to check out the following repos with pre-built ports.
 
 - [Tempus themes **GTK3 Source View**](https://gitlab.com/protesilaos/tempus-themes-gtksourceview3)
+- [Tempus themes **GTK4 Source View**](https://gitlab.com/protesilaos/tempus-themes-gtksourceview4)
 - [Tempus themes **Kitty**](https://gitlab.com/protesilaos/tempus-themes-kitty)
 - [Tempus themes **Konsole**](https://gitlab.com/protesilaos/tempus-themes-konsole)
 - [Tempus themes **Tilix**](https://gitlab.com/protesilaos/tempus-themes-tilix)
@@ -132,6 +134,27 @@ mkdir -p ~/.local/share/gtksourceview-3.0/styles/
 
 # Generate the theme and place it in the created directory
 ./tempus-themes-generator.sh winter gtksourceview3 > ~/.local/share/gtksourceview-3.0/styles/tempus_winter.xml
+```
+
+The theme will then be available from the supported app's preferences window.
+
+### GTK4 Source View
+
+This is the file used by GTK4 programs to highlight code syntax (GNOME Builder is the first known editor to support it). Typically implemented by text editors. Some of the popular choices are Gedit (default GNOME), Pluma (default MATE), Mousepad (default Xfce), and Xed (default Linux Mint Cinnamon).
+
+The theme files can be located in either of two places:
+
+- At `/usr/share/gtksourceview-4/styles/` which makes them accessible to all users (requires root privileges).
+- Or `~/.local/share/gtksourceview-4/styles/` for use by the current user (directory path needs to be created if it does not already exist).
+
+Choose whatever option suits your needs. The following commands use the latter as an example.
+
+```sh
+# Create destination directory if it does not already exist
+mkdir -p ~/.local/share/gtksourceview-4/styles/
+
+# Generate the theme and place it in the created directory
+./tempus-themes-generator.sh winter gtksourceview4 > ~/.local/share/gtksourceview-4/styles/tempus_winter.xml
 ```
 
 The theme will then be available from the supported app's preferences window.
