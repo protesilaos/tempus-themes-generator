@@ -4,6 +4,25 @@
 
 *NOTE. No actual release tags are made available. While this script 'works' for my limited use case, it is not tested for widespread use, nor is it a technically good piece of programming.*
 
+## 0.22.0.20190123
+
+Add `gtksourcevie4` template file.  This is mainly to support Gnome
+Builder themes.
+
+Change the value for current line highlight in `gtksourceview3`.  See
+next point.
+
+New feature: background dim colour.  This is achieved by processing and
+combining the two bg values of each scheme.  The relevant code is added
+in each item inside the schemes directory.  For the time being, the dim
+bg is used only in gtksourceview{3,4} to draw the background of the
+current line (when it is configured to be highlighted), but may be
+incorporated elsewhere in future versions.
+
+Expand the README with documentation on how to use GTK Source View 4.
+
+Make all colour values lower case in `schemes/past`.
+
 ## 0.21.0.20181118
 
 Add "alt" variants to the foregound and background variables in
