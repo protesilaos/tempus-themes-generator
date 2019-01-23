@@ -68,6 +68,20 @@ col13rgb=$(printf "%d,%d,%d" 0x${col13:0:2} 0x${col13:2:2} 0x${col13:4:2})
 col14rgb=$(printf "%d,%d,%d" 0x${col14:0:2} 0x${col14:2:2} 0x${col14:4:2})
 col15rgb=$(printf "%d,%d,%d" 0x${col15:0:2} 0x${col15:2:2} 0x${col15:4:2})
 
+# Special colour blends (experimental)
+# ------------------------------------
+
+# First convert the theme's base background values to decimal notation
+col15rgb=$(printf "%d%d%d" 0x${col15:0:2} 0x${col15:2:2} 0x${col15:4:2})
+col7rgb=$(printf "%d%d%d" 0x${col7:0:2} 0x${col7:2:2} 0x${col7:4:2})
+
+# Combine the R/G/B channels of the two colours by adding each colour's
+# R/G/B and dividing by 2.
+col157rgb=$(printf "%d%d%d" "$(( (${col15rgb:0:3} + ${col7rgb:0:3}) / 2 ))" "$(( (${col15rgb:3:3} + ${col7rgb:3:3}) / 2 ))" "$(( (${col15rgb:6:3} + ${col7rgb:6:3}) / 2 ))")
+
+# Then convert that into a hexadecimal value
+col157=$(printf "%x%x%x" ${col157rgb:0:3} ${col157rgb:3:3} ${col157rgb:6:3})
+
 # Terminal values
 # ----------------------------
 
@@ -115,3 +129,6 @@ ccolbgalt=$ccol7   # Console Background alternative
 ccolfg=$ccol0      # Console Foreground
 ccolfgalt=$ccol8   # Console Foreground alternative
 ccolcr=$ccol0      # Console Cursor
+
+# Special values
+colbgdim=$col157   # In between col15 and col7
