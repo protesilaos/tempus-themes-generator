@@ -12,8 +12,8 @@ static const char *colorname[] = {
     [7] = "#${col7}",
 
     /* 8 bright colors */
-    [8] = "#${col8}", 
-    [9] = "#${col9}", 
+    [8] = "#${col8}",
+    [9] = "#${col9}",
     [10] = "#${col10}",
     [11] = "#${col11}",
     [12] = "#${col12}",
