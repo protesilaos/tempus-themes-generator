@@ -33,22 +33,22 @@ tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
 
 # Colour values (HEX)
 # ----------------------------
-col0=3b2820        # black variant
-col1=d62500        # red variant
-col2=207f20        # green variant
-col3=8a6900        # yellow variant
-col4=306ad0        # blue variant
-col5=c6365d        # magenta variant
-col6=00798d        # cyan variant
-col7=f5f0f5        # white variant
-col8=5b4440        # bright black variant
-col9=bb4b00        # bright red variant
-col10=5a7800       # bright green variant
-col11=9a6033       # bright yellow variant
-col12=6061d0       # bright blue variant
-col13=8850d0       # bright magenta variant
-col14=007c6d       # bright cyan variant
-col15=f8f1e0       # bright white variant
+col0=464340        # black variant
+col1=c81000        # red variant
+col2=107410        # green variant
+col3=806000        # yellow variant
+col4=385dc4        # blue variant
+col5=b63052        # magenta variant
+col6=007070        # cyan variant
+col7=eae9dd        # white variant
+col8=68607d        # bright black variant
+col9=b94000        # bright red variant
+col10=4a7240       # bright green variant
+col11=706a00       # bright yellow variant
+col12=0d66c9       # bright blue variant
+col13=8055aa       # bright magenta variant
+col14=337087       # bright cyan variant
+col15=f8f2e5       # bright white variant
 
 # Colour values (RGB)
 # ----------------------------
