@@ -311,7 +311,7 @@ See [CONTRIBUTING.md](https://gitlab.com/protesilaos/tempus-themes-generator/blo
 
 ## Changelog
 
-Refer to the [CHANGELOG.md](https://gitlab.com/protesilaos/tempus-themes-generator/blob/master/CHANGELOG.md)
+Refer to the [CHANGELOG](https://gitlab.com/protesilaos/tempus-themes-generator/blob/master/CHANGELOG)
 
 ## Additional resources
 
