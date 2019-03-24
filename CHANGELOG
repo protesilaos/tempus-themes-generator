@@ -8,6 +8,31 @@ NOTE. No actual release tags are made available. While this script
 'works' for my limited use case, it is not tested for widespread use,
 nor is it a technically good piece of programming.
 
+0.24.0.20190324
+---------------
+
+Full review of the Autumn scheme.  The entire colour palette has
+undergone changes.  See commit cefa55f4bb12bf754a5568da1eb5ab4e16c27e13.
+
+Minor review of the Dawn scheme.  Tweaked the base background and
+foreground values, to make them less stark.  For the full diff, see
+d8f84932fcf36baef8f96eb4cbf415cc22748d21.
+
+Major review of the Future scheme.  Kept the same look, but addressed
+some major flaws.  See 9897a596cc0b2607730506454c82f665dc0027eb.
+
+Minor review of the Night scheme.  Improve the distinction between green
+and cyan: 62286af9aad831c72786dbb19b88f7015ccef3d7.
+
+Major review of the Spring scheme.  Improved the uniqueness of most
+colours in the palette: a6481c080bcb0f3173e32c08feae930dd5bc05d3.
+
+Major review of the Summer scheme.  Made colours more unique and
+distinct from each other: c0499033b24b36570ffc8805b1c6a6a2984cb27a.
+
+Major review of the Winter scheme.  Again the intention is to improve
+clarity: c497e8aad201b6d018551f0d4935e4aad4e5a006.
+
 0.23.0.20190223
 ---------------
 
