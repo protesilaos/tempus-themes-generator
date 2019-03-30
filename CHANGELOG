@@ -8,6 +8,13 @@ NOTE. No actual release tags are made available. While this script
 'works' for my limited use case, it is not tested for widespread use,
 nor is it a technically good piece of programming.
 
+0.25.0.20190330
+---------------
+
+Add backgrounddim key in the "shell-variables" template.  This specific
+template is meant to be used in scripts.  It is implemented in my
+dotfiles: https://gitlab.com/protesilaos/dotfiles
+
 0.24.0.20190324
 ---------------
 

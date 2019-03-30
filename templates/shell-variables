@@ -26,3 +26,6 @@ color12="#${col12}"
 color13="#${col13}"
 color14="#${col14}"
 color15="#${col15}"
+
+# Special colours
+backgrounddim="#${colbgdim}"
