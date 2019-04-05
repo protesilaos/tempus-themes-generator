@@ -6,7 +6,7 @@
 set background=$tempus_theme_variant
 hi clear
 if exists("syntax_on")
-  syntax reset
+	syntax reset
 endif
 let g:colors_name = "${tempus_theme_name_slug_full_underscore}"
 
@@ -16,12 +16,12 @@ let g:colors_name = "${tempus_theme_name_slug_full_underscore}"
 " NOTE the ctermbg=none is for terminals with transparency
 hi Normal guibg=#${colbg} guifg=#${colfg} ctermbg=none ctermfg=$ccolfg
 hi Visual guibg=#${colfg} guifg=#${colbg} ctermbg=$ccolfg ctermfg=$ccolbg
-hi Search gui=underline,bold,italic guibg=#${col2} guifg=#${colbg} cterm=underline,bold,italic ctermbg=$ccol2 ctermfg=$ccolbg
-hi IncSearch gui=underline,bold,italic guibg=#${colfgalt} guifg=#${colbg} term=none cterm=underline,bold,italic ctermbg=$ccolfgalt ctermfg=$ccolbg
+hi Search gui=underline,bold,italic guibg=#${col2} guifg=#${colbg} cterm=underline,bold ctermbg=$ccol2 ctermfg=$ccolbg
+hi IncSearch gui=underline,bold,italic guibg=#${colfgalt} guifg=#${colbg} term=none cterm=underline,bold ctermbg=$ccolfgalt ctermfg=$ccolbg
 
-hi StatusLine gui=none,bold guibg=#${colfg} guifg=#${colbg} cterm=none,bold ctermbg=$ccolfg ctermfg=$ccolbg
+hi StatusLine gui=none guibg=#${colfg} guifg=#${colbg} cterm=none ctermbg=$ccolfg ctermfg=$ccolbg
 hi StatusLineNC gui=none guibg=#${colbgalt} guifg=#${colfgalt} cterm=none ctermbg=$ccolbgalt ctermfg=$ccolfgalt
-hi StatusLineTerm gui=none,bold guibg=#${col2} guifg=#${colbg} cterm=none,bold ctermbg=$ccol2 ctermfg=$ccolbg
+hi StatusLineTerm gui=none guibg=#${col2} guifg=#${colbg} cterm=none ctermbg=$ccol2 ctermfg=$ccolbg
 hi StatusLineTermNC gui=none guibg=#${colbgalt} guifg=#${col2} cterm=none ctermbg=$ccolbgalt ctermfg=$ccol2
 
 hi VertSplit gui=none cterm=none
@@ -29,7 +29,7 @@ hi TabLine gui=none guibg=#${colbgalt} guifg=#${colfgalt} cterm=none ctermbg=$cc
 hi TabLineSel gui=none guibg=#${colfg} guifg=#${colbg} cterm=none ctermbg=$ccolfg ctermfg=$ccolbg
 hi TabLineFill gui=none cterm=none
 
-hi Comment gui=italic guifg=#${colfgalt} cterm=italic ctermfg=$ccolfgalt
+hi Comment gui=italic guifg=#${colfgalt} cterm=none ctermfg=$ccolfgalt
 hi Todo gui=bold guibg=#${colbgalt} guifg=#${col11} cterm=bold ctermbg=$ccolbgalt ctermfg=$ccol11
 
 hi Warning gui=none guibg=#${col3} guifg=#${colbg} cterm=none ctermbg=$ccol3 ctermfg=$ccolbg
@@ -37,7 +37,7 @@ hi WarningMsg gui=none guibg=#${col3} guifg=#${colbg} cterm=none ctermbg=$ccol3 
 hi Error gui=none guibg=#${col1} guifg=#${colbg} cterm=none ctermbg=$ccol1 ctermfg=$ccolbg
 hi ErrorMsg gui=none guibg=#${col1} guifg=#${colbg} cterm=none ctermbg=$ccol1 ctermfg=$ccolbg
 
-hi MatchParen gui=underline,bold guibg=#${col13} guifg=#${colbg} cterm=underline,bold ctermbg=$ccol13 ctermfg=$ccolbg
+hi MatchParen gui=underline,bold guibg=#${colbgalt} guifg=#${colfgalt} cterm=underline,bold ctermbg=$ccolbgalt ctermfg=$ccolfgalt
 
 hi ToolbarLine guibg=#${colfgalt} guifg=#${colbg} term=none ctermbg=$ccolfgalt ctermfg=$ccolbg
 hi ToolbarButton gui=bold guibg=#${colfgalt} guifg=#${colbg} term=none cterm=bold ctermbg=$ccolfgalt ctermfg=$ccolbg
@@ -81,10 +81,6 @@ hi Define guifg=#${col9} ctermfg=$ccol9
 
 hi Title gui=bold guibg=#${colbg} guifg=#${col6} cterm=bold ctermbg=$ccolbg ctermfg=$ccol6
 
-hi Special gui=bold guifg=#${col11} term=none cterm=bold ctermfg=$ccol11
-hi SpecialKey guifg=#${col11} ctermfg=$ccol11
-hi SpecialChar gui=bold guifg=#${col11} cterm=bold ctermfg=$ccol11
-
 hi Delimeter gui=bold guifg=#${col5} cterm=bold ctermfg=$ccol5
 hi Delimiter gui=bold guifg=#${col5} cterm=bold ctermfg=$ccol5
 hi SpecialComment gui=bold guifg=#${col5} cterm=bold ctermfg=$ccol5
@@ -103,7 +99,11 @@ hi ColorColumn guibg=#${colbgalt} guifg=#${colfg} term=none ctermbg=$ccolbgalt c
 hi Folded guibg=#${colbgalt} guifg=#${colfgalt} ctermbg=$ccolbgalt ctermfg=$ccolfgalt
 hi FoldColumn guibg=#${colbgalt} guifg=#${colfgalt} ctermbg=$ccolbgalt ctermfg=$ccolfgalt
 
-hi NonText gui=bold guibg=NONE guifg=#${colfgalt} cterm=bold ctermbg=none ctermfg=$ccolfgalt
+hi Special gui=bold guifg=#${col11} term=none cterm=bold ctermfg=$ccol11
+hi SpecialKey gui=none guibg=#${colbgalt} guifg=#${colfgalt} cterm=none ctermbg=$ccolbgalt ctermfg=$ccolfgalt
+hi SpecialChar gui=bold guifg=#${col11} cterm=bold ctermfg=$ccol11
+hi NonText gui=none guibg=#${colbgalt} guifg=#${colfgalt} cterm=none ctermbg=$ccolbgalt ctermfg=$ccolfgalt
+hi EndOfBuffer gui=bold guifg=#${colfgalt} cterm=bold ctermfg=$ccolfgalt
 
 hi Directory gui=none guifg=#${col2} term=none cterm=none ctermfg=$ccol2
 hi Question gui=bold guifg=#${col11} cterm=bold ctermfg=$ccol11
@@ -122,7 +122,7 @@ hi SpellCap guibg=#${col3} guifg=#${colbg} ctermbg=$ccol3 ctermfg=$ccolbg
 hi SpellRare guibg=#${col13} guifg=#${colbg} ctermbg=$ccol13 ctermfg=$ccolbg
 hi SpellLocal guibg=#${col14} guifg=#${colbg} ctermbg=$ccol14 ctermfg=$ccolbg
 
-hi Pmenu gui=italic guibg=#${colbgalt} guifg=#${colfg} cterm=italic ctermbg=$ccolbgalt ctermfg=$ccolfg
+hi Pmenu gui=italic guibg=#${colbgalt} guifg=#${colfg} cterm=none ctermbg=$ccolbgalt ctermfg=$ccolfg
 hi PmenuSel gui=none,bold guibg=#${colfgalt} guifg=#${colbg} cterm=none,bold ctermbg=$ccolfgalt ctermfg=$ccolbg
 hi PmenuSbar guibg=#${colbgalt} ctermbg=$ccolbgalt
 hi PmenuThumb guibg=#${colfgalt} ctermbg=$ccolfgalt

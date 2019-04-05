@@ -8,6 +8,21 @@ NOTE. No actual release tags are made available. While this script
 'works' for my limited use case, it is not tested for widespread use,
 nor is it a technically good piece of programming.
 
+0.26.0.20190405
+---------------
+
+Minor refinements to the Vim template:
+
+1. Remove "italic" styles from the CLI version of the theme.  This is
+   particularly important for bitmap fonts that do not offer true/good
+   italics, but also for some popular outline (variable) fonts, such as
+   Inconsolata and Fira Mono.
+2. Redefine the styles that govern invisible characters and bracket
+   matching.  Both are made more subtle, while also adding to the
+   function of the constructs they apply to (e.g. "invisible" characters
+   should not look the same as ordinary text, yet still be clearly
+   visible -- `:set list` to try it out).
+
 0.25.0.20190330
 ---------------
 
