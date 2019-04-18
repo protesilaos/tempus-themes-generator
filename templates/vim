@@ -1,7 +1,9 @@
 " vi: ft=vim
 " Name: $tempus_theme_name_full
-" Author: $tempus_theme_author
 " Description: $tempus_theme_description
+" Author: $tempus_theme_author
+" Meta: Created with the Tempus Themes Generator
+" URL: https://gitlab.com/protesilaos/tempus-themes-generator
 
 set background=$tempus_theme_variant
 hi clear
@@ -11,8 +13,7 @@ endif
 let g:colors_name = "${tempus_theme_name_slug_full_underscore}"
 
 " General
-" -----------------
-
+" -------
 " NOTE the ctermbg=none is for terminals with transparency
 hi Normal guibg=#${colbg} guifg=#${colfg} ctermbg=none ctermfg=$ccolfg
 hi Visual guibg=#${colfg} guifg=#${colbg} ctermbg=$ccolfg ctermfg=$ccolbg
@@ -26,7 +27,7 @@ hi StatusLineTermNC gui=none guibg=#${colbgalt} guifg=#${col2} cterm=none ctermb
 
 hi VertSplit gui=none cterm=none
 hi TabLine gui=none guibg=#${colbgalt} guifg=#${colfgalt} cterm=none ctermbg=$ccolbgalt ctermfg=$ccolfgalt
-hi TabLineSel gui=none guibg=#${colfg} guifg=#${colbg} cterm=none ctermbg=$ccolfg ctermfg=$ccolbg
+hi TabLineSel gui=none guibg=#${col6} guifg=#${colbg} cterm=none ctermbg=$ccol6 ctermfg=$ccolbg
 hi TabLineFill gui=none cterm=none
 
 hi Comment gui=italic guifg=#${colfgalt} cterm=none ctermfg=$ccolfgalt
@@ -47,7 +48,7 @@ hi WildMenu guibg=#${colbg} guifg=#${colfg} term=standout ctermbg=$ccolbg ctermf
 hi Terminal guibg=#${colbg} guifg=#${colfg} term=none ctermbg=$ccolbg ctermfg=$ccolfg
 
 " Constructs
-" -----------------
+" ----------
 hi Constant guifg=#${col4} ctermfg=$ccol4
 hi Number guifg=#${col4} ctermfg=$ccol4
 hi Float guifg=#${col4} ctermfg=$ccol4
@@ -88,7 +89,7 @@ hi SpecialComment gui=bold guifg=#${col5} cterm=bold ctermfg=$ccol5
 hi Debug guifg=#${col13} ctermfg=$ccol13
 
 " Other
-" -----------------
+" -----
 hi LineNr guibg=#${colbgalt} guifg=#${colfgalt} term=none ctermbg=$ccolbgalt ctermfg=$ccolfgalt
 hi Cursor guibg=#${colfg} guifg=#${colbg} ctermbg=$ccolfg ctermfg=$ccolbg
 hi CursorLine gui=none guibg=NONE term=none cterm=none ctermbg=none
@@ -113,7 +114,7 @@ hi ModeMsg gui=bold guifg=#${col2} cterm=bold ctermfg=$ccol2
 hi VimOption guifg=#${col5} ctermfg=$ccol5
 hi VimGroup guifg=#${col5} ctermfg=$ccol5
 
-hi Underlined gui=underline,bold guifg=#${colfg} cterm=underline,bold ctermfg=$ccolfg
+hi Underlined gui=underline guifg=#${colfg} cterm=underline ctermfg=$ccolfg
 hi Ignore guibg=#${colbgalt} guifg=#${colfgalt} ctermbg=$ccolbgalt ctermfg=$ccolfgalt
 hi Conceal guibg=#${colfgalt} guifg=#${colbgalt} ctermbg=$ccolfgalt ctermfg=$ccolbgalt
 
@@ -128,7 +129,7 @@ hi PmenuSbar guibg=#${colbgalt} ctermbg=$ccolbgalt
 hi PmenuThumb guibg=#${colfgalt} ctermbg=$ccolfgalt
 
 " Diffs
-" -----------------
+" -----
 hi DiffAdd gui=bold guibg=#${col2} guifg=#${colbg} cterm=bold ctermbg=$ccol10 ctermfg=$ccolbg
 hi DiffDelete gui=none guibg=#${col1} guifg=#${colbg} cterm=none ctermbg=$ccol9 ctermfg=$ccolbg
 hi DiffChange gui=bold guibg=#${colbgalt} guifg=#${colfgalt} cterm=bold ctermbg=$ccolbgalt ctermfg=$ccolfgalt
@@ -138,3 +139,36 @@ hi diffAdded guifg=#${col2} ctermfg=$ccol2
 hi diffRemoved guifg=#${col1} ctermfg=$ccol1
 hi diffNewFile gui=none guifg=#${col4} ctermfg=$ccol4
 hi diffFile gui=none guifg=#${col3} cterm=none ctermfg=$ccol3
+
+" Markdown
+" --------
+hi MarkdownRule gui=bold guibg=#${colbgalt} guifg=#${col10} cterm=bold ctermbg=$ccolbgalt ctermfg=$ccol10
+
+hi MarkdownHeading gui=bold guifg=#${colfg} cterm=bold ctermfg=$ccolfg
+hi default link MarkdownH1 MarkdownHeading
+hi default link MarkdownH2 MarkdownHeading
+hi default link MarkdownH3 MarkdownHeading
+hi default link MarkdownH4 MarkdownHeading
+hi default link MarkdownH5 MarkdownHeading
+hi default link MarkdownH6 MarkdownHeading
+hi default link MarkdownHeadingDelimiter MarkdownHeading
+hi default link MarkdownHeadingRule MarkdownHeading
+
+hi MarkdownBold gui=bold guifg=#${col9} cterm=bold ctermfg=$ccol9
+hi default link MarkdownBoldDelimiter MarkdownBold
+
+hi MarkdownItalic gui=italic guifg=#${col3} cterm=none ctermfg=$ccol3
+hi default link MarkdownItalicDelimiter MarkdownItalic
+
+hi MarkdownUrl gui=underline guifg=#${col4} cterm=underline ctermfg=$ccol4
+hi MarkdownLinkText gui=none guifg=#${col12} cterm=none ctermfg=$ccol12
+hi MarkdownLinkDelimiter gui=bold guifg=#${colfg} cterm=bold ctermfg=$ccolfg
+hi default link MarkdownLinkTextDelimiter MarkdownLinkDelimiter
+
+hi MarkdownCode guifg=#${col5} ctermfg=$ccol5
+hi default link MarkdownCodeDelimiter MarkdownCode
+
+hi MarkdownCodeBlock guifg=#${colfg} ctermfg=${ccolfg}
+
+hi MarkdownListMarker gui=none guifg=#${col2} cterm=none ctermfg=${ccol2}
+hi default link MarkdownOrderedListMarker MarkdownListMarker

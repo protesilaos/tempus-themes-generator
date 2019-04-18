@@ -8,6 +8,24 @@ NOTE. No actual release tags are made available. While this script
 'works' for my limited use case, it is not tested for widespread use,
 nor is it a technically good piece of programming.
 
+0.27.0.20190418
+---------------
+
+Refinements to the Vim template:
+
+1. Add some highlighting definitions for Markdown.  This should improve
+   things a bit, as delimiters for headings, bold, italic, and inline
+   code used different formatting than their corresponding objects.
+   Given this opportunity, also be more considerate for the use of
+   italicised or oblique text in terminals (also see CHANGELOG heading
+   0.26.0.20190405).
+2. Improve the comment block at the top that offers info about the
+   theme.  Add reference to the Tempus Themes Generator.
+3. Change the style of the active tab on the tabline.  Make it cyan, to
+   clearly indicate its "selected" status.
+4. Trim the section title delimiters (the multiple hyphers "---") so
+   that they aligned with the title's length.
+
 0.26.0.20190405
 ---------------
 
