@@ -1,0 +1,50 @@
+#!/bin/bash
+
+# Terminal values
+# ---------------
+
+# Palette values corresponding to terminal codes followed by termcol
+# description.
+ccol0=0     # black
+ccol1=1     # red
+ccol2=2     # green
+ccol3=3     # yellow
+ccol4=4     # blue
+ccol5=5     # magenta
+ccol6=6     # cyan
+ccol7=7     # white
+ccol8=8     # brblack
+ccol9=9     # brred
+ccol10=10   # brgreen
+ccol11=11   # bryellow
+ccol12=12   # brblue
+ccol13=13   # brmagenta
+ccol14=14   # brcyan
+ccol15=15   # brwhite
+
+# Colour values (RGB)
+# ----------------------------
+
+hex_to_rgb() {
+	printf '%d,%d,%d' 0x"${1:0:2}" 0x"${1:2:2}" 0x"${1:4:2}"
+}
+
+# Convert the schemes colour palette from hexadecimal to decimal
+# notation.  This is required for applications that only read colours
+# defined in r,g,b.
+col0rgb="$(hex_to_rgb $col0)"
+col1rgb="$(hex_to_rgb $col1)"
+col2rgb="$(hex_to_rgb $col2)"
+col3rgb="$(hex_to_rgb $col3)"
+col4rgb="$(hex_to_rgb $col4)"
+col5rgb="$(hex_to_rgb $col5)"
+col6rgb="$(hex_to_rgb $col6)"
+col7rgb="$(hex_to_rgb $col7)"
+col8rgb="$(hex_to_rgb $col8)"
+col9rgb="$(hex_to_rgb $col9)"
+col10rgb="$(hex_to_rgb $col10)"
+col11rgb="$(hex_to_rgb $col11)"
+col12rgb="$(hex_to_rgb $col12)"
+col13rgb="$(hex_to_rgb $col13)"
+col14rgb="$(hex_to_rgb $col14)"
+col15rgb="$(hex_to_rgb $col15)"

@@ -1,0 +1,55 @@
+#!/bin/bash
+
+# Special colour blends (experimental)
+# ------------------------------------
+# This is needed to create the colour blend between the two background
+# values, resulting in an in-between value: the dimmed background.
+
+# Combine the R,G,B channels of the two colours by adding each colour's
+# respective R,G,B and dividing by 2.  This converts the value to
+# decimal notation.
+combine_colours() {
+	printf '%02d%02d%02d' \
+	$(( (0x"${1:0:2}" + 0x"${2:0:2}") / 2)) \
+	$(( (0x"${1:2:2}" + 0x"${2:2:2}") / 2)) \
+	$(( (0x"${1:4:2}" + 0x"${2:4:2}") / 2))
+}
+
+# Convert decimal notation to hexadecimal.
+rgb_to_hex() {
+	printf '%02x%02x%02x' "${1:0:2}" "${1:2:2}" "${1:4:2}"
+}
+
+col08rgb="$(combine_colours "$col0" "$col8")"
+col08="$(rgb_to_hex "$col08rgb")"
+
+# Base values
+# -----------
+
+# HEX base values
+colbg="$col0"       # Background
+colbgalt="$col8"    # Background alternative
+colfg="$col15"      # Foreground
+colfgalt="$col7"    # Foreground alternative
+colcr="$col15"      # Cursor
+colcr2="$col0"      # Cursor text
+
+# RGB base values
+colbgrgb="$col0rgb"       # Background
+colbgaltrgb="$col8rgb"    # Background alternative
+colfgrgb="$col15rgb"      # Foreground
+colfgaltrgb="$col7rgb"    # Foreground alternative
+colcrrgb="$col15rgb"      # Cursor
+colcr2rgb="$col0rgb"      # Cursor text
+
+# The following are specific to the Vim template
+# They should always reflect the above base values
+ccolbg="$ccol0"     # Console Background
+ccolbgalt="$ccol8"  # Console Background alternative
+ccolfg="$ccol15"    # Console Foreground
+ccolfgalt="$ccol7"  # Console Foreground alternative
+ccolcr="$ccol15"    # Console Cursor
+
+# Special values
+colbgdim="$col08"   # In between col0 and col8
+
