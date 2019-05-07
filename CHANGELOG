@@ -4,9 +4,43 @@ Changelog for Tempus Themes Generator
 Latest version is at the top. Versioning follows semver specs, with the
 date appended in the form of YYMMDD.
 
-NOTE. No actual release tags are made available. While this script
-'works' for my limited use case, it is not tested for widespread use,
-nor is it a technically good piece of programming.
+
+
+1.0.0.20190507
+--------------
+
+Major changes to the design of this project:
+
+1. All schemes have been reduced to their essential data.  This includes
+   their meta data (name, description, etc.) and 16-colour palette.  All
+   other parameters have been moved to the new "presets" directory.
+2. The "presets" directory contains colour mappings that unique to
+   "light" and "dark" themes.  It also contains a set of data that is
+   common to both variants.
+3. The `tempus-themes-generator.sh` has cleaner code.  It also is
+   focused on the single task of printing to stdout a ready-to-use
+   theme.  The redesign is also intended to make best use of the
+   afore-mentioned changes: it is the generator's task to pick the right
+   preset for the selected scheme.
+
+The redesign also revealed some actual and potential problems with the
+old way of deriving colour blends for the "dimmed" background.  These are:
+
+* Dark themes with HEX values that had a distance from 0 >= 9 would
+  ultimately generate an invalid dim colour when converting back to hex
+  following the colour blending.  This is because 09 (HEX) == 9 (RGB)
+  and so the resulting colour was (i) miscalculated, and/or (ii)
+  contained fewer digits than what is necessary for a valid HEX colour.)
+  miscalculated, and/or (ii) contained fewer digits than what is
+  necessary for a valid HEX colour.  The problem was noticed when using
+  the Tempus Future theme.
+* The reading the RGB value for light themes was using a parameter
+  expansion that is only appropriate for dark themes.  A light RGB
+  colour, will look like this 255,220,200 (do not mind the delimiters),
+  whereas a dark will be like 0,10,20, so the range must be seen in sets
+  of 3, not 2.  It appears that no bug existed, as all light themes
+  would show the right dim colour, but this would have created a problem
+  in the new design by miscalculating making the resulting value.
 
 0.27.0.20190418
 ---------------
