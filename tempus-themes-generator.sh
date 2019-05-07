@@ -71,7 +71,7 @@ _item_in_array "$_template" "${templates[*]}" || { echo "ERROR. «$_template» i
 light_themes=()
 while read -r -d $'\n' item; do
 	light_themes+=("${item##*/}")
-done < <(find schemes -type f -exec grep -l light {} \;)
+done < <(find schemes -type f -exec grep -lw light {} \;)
 
 if _item_in_array "$_scheme" "${light_themes[*]}"; then
 	_preset='light_theme'
