@@ -17,8 +17,8 @@ let g:colors_name = "${tempus_theme_name_slug_full_underscore}"
 " NOTE the ctermbg=none is for terminals with transparency
 hi Normal guibg=#${colbg} guifg=#${colfg} ctermbg=none ctermfg=$ccolfg
 hi Visual guibg=#${colfg} guifg=#${colbg} ctermbg=$ccolfg ctermfg=$ccolbg
-hi Search gui=underline,bold,italic guibg=#${col2} guifg=#${colbg} cterm=underline,bold ctermbg=$ccol2 ctermfg=$ccolbg
-hi IncSearch gui=underline,bold,italic guibg=#${colfgalt} guifg=#${colbg} term=none cterm=underline,bold ctermbg=$ccolfgalt ctermfg=$ccolbg
+hi Search gui=underline,bold,reverse cterm=underline,bold,reverse
+hi IncSearch gui=underline,bold,reverse cterm=underline,bold,reverse
 
 hi StatusLine gui=none guibg=#${colfg} guifg=#${colbg} cterm=none ctermbg=$ccolfg ctermfg=$ccolbg
 hi StatusLineNC gui=none guibg=#${colbgalt} guifg=#${colfgalt} cterm=none ctermbg=$ccolbgalt ctermfg=$ccolfgalt
