@@ -9,7 +9,7 @@ date appended in the form of YYMMDD.
 1.0.1.20190523
 --------------
 
-Minor, but important changes, that are meant to address some
+Minor, but important changes that are meant to address some
 inconsistencies between the cursor colour and the underlying text colour
 when running Vim inside XTerm.  In particular:
 
