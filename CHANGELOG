@@ -6,6 +6,15 @@ date appended in the form of YYMMDD.
 
 
 
+1.0.2.20190523
+--------------
+
+Review changes to Vim template, because they did not work well with
+light themes.  A better default has been set.  Nevertheless, it seems
+the best solution for Xterm is to just enable cursor blink, so that you
+can at least have an idea of where the cursor is when/if it is obscured
+by colour combinations that it cannot support properly.
+
 1.0.1.20190523
 --------------
 
