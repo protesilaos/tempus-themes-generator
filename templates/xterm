@@ -4,7 +4,6 @@
 ! Author: $tempus_theme_author
 xterm*background: #${colbg}
 xterm*foreground: #${colfg}
-xterm*cursorColor: #${colfg}
 xterm*color0: #${col0}
 xterm*color1: #${col1}
 xterm*color2: #${col2}
