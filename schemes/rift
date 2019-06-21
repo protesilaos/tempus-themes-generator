@@ -1,21 +1,5 @@
 # vi: ft=sh
 
-# ============================  
-# scheme: Rift
-# scheme family: Tempus
-# description: Dark theme with a subdued palette on the green side of the spectrum
-# author: Protesilaos Stavrou (https://protesilaos.com/)
-# ============================  
-
-# This dark theme only uses the col0 and col8 values for backgrounds.
-# All other colours are foreground values.
-
-# All fgs have a contrast ratio of >= 4.50:1 (WCAG AA) against the bgs.
-# Exception is col8 on col0 or vice versa (these are mutually exclusive)
-
-# It is possible to use foregrounds as backgrounds, by reversing the above.
-# DO NOT blend foregrounds together. The contrast ratio is sub-standard.
-
 # Meta data
 # ----------------------------
 tempus_theme_name='Rift'

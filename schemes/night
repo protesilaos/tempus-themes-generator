@@ -1,24 +1,5 @@
 # vi: ft=sh
 
-# ============================  
-# scheme: Night
-# scheme family: Tempus
-# description: High contrast dark theme with bright colours
-# author: Protesilaos Stavrou (https://protesilaos.com/)
-# ============================  
-
-# This dark theme uses col0 and col8 values for backgrounds (bgs).
-# The rest are foreground colours (fgs)
-
-# All fgs have a contrast ratio of >= 7.00:1 against bgs (WCAG AAA).
-# The two background values are mutually exclusive.
-
-# It is possible for nominal foregrounds to function as bgs,
-# only if their fg is one of the nominal backgrounds.
-# So if col0 = bg and col1 = fg, then also col1 = bg, col0 = fg.
-
-# Nominal foregrounds, should never be used in a fg/bg combination.
-
 # Meta data
 # ----------------------------
 tempus_theme_name='Night'

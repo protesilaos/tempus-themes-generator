@@ -1,24 +1,5 @@
 # vi: ft=sh
 
-# ============================  
-# scheme: Day
-# scheme family: Tempus
-# description: Light theme with warm colours
-# author: Protesilaos Stavrou (https://protesilaos.com/)
-# ============================  
-
-# This light theme uses col15 and col0 values for backgrounds (bgs).
-# The rest are foreground colours (fgs).
-
-# All fgs have a contrast ratio of >= 4.50:1 against bgs (WCAG AA).
-# The two background values are mutually exclusive.
-
-# It is possible for nominal foregrounds to function as bgs,
-# only if their fg is one of the nominal backgrounds.
-# So if col15 = bg and col1 = fg, then also col1 = bg, col15 = fg.
-
-# Nominal foregrounds, should never be used in a fg/bg combination.
-
 # Meta data
 # ----------------------------
 tempus_theme_name='Day'

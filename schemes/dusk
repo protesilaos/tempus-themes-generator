@@ -1,24 +1,5 @@
 # vi: ft=sh
 
-# ============================  
-# scheme: Dusk
-# scheme family: Tempus
-# description: Dark theme with a deep blue-ish, slightly desaturated palette
-# author: Protesilaos Stavrou (https://protesilaos.com/)
-# ============================  
-
-# This dark theme only uses the col0 and col8 values for backgrounds.
-# The rest are foreground values, subdivided in proper and bright variants.
-
-# All main values have a contrast ratio of 5.50:1 against col0 (WCAG AA).
-# All main values have a contrast ratio of 4.50:1 against col8 (WCAG AA).
-
-# All bright values have a contrast ratio of 6.50:1 against col0 (WCAG AA).
-# All bright values have a contrast ratio of 5.32:1 against col8 (WCAG AA).
-
-# All fgs can be used as bgs, provided their fg is either col0 or col8.
-# Example: col1 as background with col0 as foreground (5.50:1 contrast).
-
 # Meta data
 # ----------------------------
 tempus_theme_name='Dusk'

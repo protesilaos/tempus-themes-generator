@@ -1,24 +1,5 @@
 # vi: ft=sh
 
-# ============================== 
-# scheme: Dawn
-# scheme family: Tempus
-# description: Light theme with a soft, slightly desaturated palette
-# author: Protesilaos Stavrou (https://protesilaos.com/)
-# ============================== 
-
-# This dark theme only uses the col15 and col7 values for backgrounds.
-# The rest are foreground values, subdivided in proper and bright variants.
-
-# All main values have a contrast ratio of >= 6.5:1 against col15 (WCAG AA).
-# All main values have a contrast ratio of >= 5.5:1 against col7 (WCAG AA).
-
-# All bright values have a contrast ratio of >= 5.50:1 against col15 (WCAG AA).
-# All bright values have a contrast ratio of >= 4.50:1 against col7 (WCAG AA).
-
-# All fgs can be used as bgs, provided their fg is either col15 or col7.
-# Example: col1 as background with col15 as foreground (6.50:1 contrast).
-
 # Meta data
 # ------------------------------ 
 tempus_theme_name='Dawn'
