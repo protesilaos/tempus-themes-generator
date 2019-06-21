@@ -38,7 +38,7 @@ _template="$2"
 schemes=()
 while IFS=  read -r -d $'\0' item; do
 	schemes+=("${item##*/}")
-done < <(find schemes -type f -print0)
+done < <(find schemes -type f ! -name '*.swp' -print0)
 
 # Same as above, but for templates
 templates=()
