@@ -8,27 +8,27 @@ The generator consists of a bash script which parses the sets of variables of ea
 
 #### Table of Contents
 
-- [Usage](#usage) 
+- [Usage](#usage)
     - [Examples](#examples)
     - [File type extensions](#file-type-extensions)
-- [Applying the themes](#applying-the-themes) 
-    - [Template-specific repositories](#template-specific-repositories) 
+- [Applying the themes](#applying-the-themes)
+    - [Template-specific repositories](#template-specific-repositories)
     - [GTK3 Source View](#gtk3-source-view)
     - [GTK4 Source View](#gtk4-source-view)
     - [Kitty](#kitty)
     - [Konsole](#konsole)
-    - [Tilix](#tilix) 
-    - [URxvt (Rxvt-Unicode)](#urxvt-rxvt-unicode) 
-    - [Xterm](#xterm) 
-    - [Xfce4 terminal](#xfce4-terminal) 
-    - [Vim](#vim) 
-- [Roadmap](#roadmap) 
+    - [Tilix](#tilix)
+    - [URxvt (Rxvt-Unicode)](#urxvt-rxvt-unicode)
+    - [Xterm](#xterm)
+    - [Xfce4 terminal](#xfce4-terminal)
+    - [Vim](#vim)
+- [Roadmap](#roadmap)
 - [Contributing](#contributing)
-- [Changelog](#changelog) 
-- [Additional resources](#additional-resources) 
-- [License](#license) 
-- [Meta](#meta) 
-- [Donations](#donations) 
+- [Changelog](#changelog)
+- [Additional resources](#additional-resources)
+- [License](#license)
+- [Meta](#meta)
+- [Donations](#donations)
 
 ## Usage
 
@@ -38,7 +38,7 @@ Start by cloning the repo:
 git clone https://gitlab.com/protesilaos/tempus-themes-generator.git --depth 1
 ```
 
-Then enter the directory: 
+Then enter the directory:
 
 ```sh
 cd tempus-themes-generator
@@ -319,15 +319,9 @@ For a hub with all available ports, see the main [Tempus themes repo](https://gi
 
 ## License
 
-GNU General Public License Version 3. 
+GNU General Public License Version 3.
 
 See [LICENSE](https://gitlab.com/protesilaos/tempus-themes-generator/gblob/master/LICENSE)
-
-## Meta
-
-The Tempus themes project consists of a number of repositories. It is maintained with a set of scripts and utilities, stored in the [tempus-themes-utils](https://gitlab.com/protesilaos/tempus-themes-utils).
-
-All theme files are created with the [Tempus themes generator](https://gitlab.com/protesilaos/tempus-themes-generator). See the generator CONTRIBUTING.md.
 
 ## Donations
 
