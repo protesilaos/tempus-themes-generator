@@ -291,7 +291,7 @@ Make all colour values lower case in `schemes/past`.
 Add "alt" variants to the foreground and background variables in
 "shell-variables".
 
-0.20.0.20181031 
+0.20.0.20181031
 ---------------
 
 Update `st` template to use custom colour references for the default
@@ -326,7 +326,7 @@ is interested about the rationale:
      * is typically interfaced via the `tempusmenu`.
      */
 
-0.19.0.20181030 
+0.19.0.20181030
 ---------------
 
 1. Fix links that used to point to the old git URL.  The Tempus Themes
@@ -385,7 +385,7 @@ Changes to `st` template to be consistent with st 0.8 (released
 
 Rewrote the `tempus-themes-generator.sh`. No breaking changes, even
 though the script was written anew. The new script offers some extra
-features compared to the original: 
+features compared to the original:
 
 1. running the script without any argument will print a detailed help
    message
