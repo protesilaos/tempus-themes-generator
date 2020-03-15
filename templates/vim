@@ -96,6 +96,7 @@ hi CursorLine gui=none guibg=NONE term=none cterm=none ctermbg=none
 hi CursorColumn gui=none guibg=#${colbgalt} term=none cterm=none ctermbg=$ccolbgalt
 hi CursorLineNr gui=bold guibg=#${colfgalt} guifg=#${colbg} cterm=bold ctermbg=$ccolfgalt ctermfg=$ccolbg
 hi ColorColumn guibg=#${colbgalt} guifg=#${colfg} term=none ctermbg=$ccolbgalt ctermfg=$ccolfg
+hi SignColumn guibg=#${colbgalt} guifg=#${colfgalt} term=none ctermbg=$ccolbgalt ctermfg=$ccolfgalt
 
 hi Folded guibg=#${colbgalt} guifg=#${colfgalt} ctermbg=$ccolbgalt ctermfg=$ccolfgalt
 hi FoldColumn guibg=#${colbgalt} guifg=#${colfgalt} ctermbg=$ccolbgalt ctermfg=$ccolfgalt
@@ -139,6 +140,30 @@ hi diffAdded guifg=#${col2} ctermfg=$ccol2
 hi diffRemoved guifg=#${col1} ctermfg=$ccol1
 hi diffNewFile gui=none guifg=#${col4} ctermfg=$ccol4
 hi diffFile gui=none guifg=#${col3} cterm=none ctermfg=$ccol3
+
+hi GitGutterAdd guibg=#${colbgalt} guifg=#${col2} ctermbg=$ccolbgalt ctermfg=$ccol2
+hi GitGutterChange gui=bold guibg=#${colbgalt} guifg=#${colfgalt} cterm=bold ctermbg=$ccolbgalt ctermfg=$ccolfgalt
+hi GitGutterDelete guibg=#${colbgalt} guifg=#${col1} ctermbg=$ccolbgalt ctermfg=$ccol1
+hi GitGutterChangeDelete gui=bold guibg=#${colbgalt} guifg=#${col1} cterm=bold ctermbg=$ccolbgalt ctermfg=$ccol1
+
+" Neomake
+" -------
+hi NeomakeError gui=none guibg=#${col1} guifg=#${colbg} cterm=none ctermbg=$ccol1 ctermfg=$ccolbg
+hi NeomakeInfo gui=none guibg=#${col6} guifg=#${colbg} cterm=none ctermbg=$ccol6 ctermfg=$ccolbg
+hi NeomakeWarning gui=none guibg=#${col3} guifg=#${colbg} cterm=none ctermbg=$ccol3 ctermfg=$ccolbg
+hi NeomakeMessage gui=none guibg=#${col11} guifg=#${colbg} cterm=none ctermbg=$ccol11 ctermfg=$ccolbg
+
+hi NeomakeVirtualtextInfoDefault guifg=#${col14} ctermfg=$ccol14
+hi NeomakeVirtualtextMessageDefault guifg=#${col11} ctermfg=$ccol11
+hi NeomakeVirtualtextWarningDefault guifg=#${col3} ctermfg=$ccol3
+hi NeomakeVirtualtextErrorDefault guifg=#${col1} ctermfg=$ccol1
+
+hi NeomakeStatusGood gui=none guibg=#${col2} guifg=#${colbg} cterm=none ctermbg=$ccol2 ctermfg=$ccolbg
+hi NeomakeStatusGoodNC gui=none guibg=#${colbgalt} guifg=#${col2} cterm=none ctermbg=$ccolbgalt ctermfg=$ccol2
+
+hi NeomakeStatColorDefault gui=none guibg=#${col4} guifg=#${colbg} cterm=none ctermbg=$ccol4 ctermfg=$ccolbg
+hi NeomakeStatColorTypeE gui=none guibg=#${col1} guifg=#${colbg} cterm=none ctermbg=$ccol1 ctermfg=$ccolbg
+hi NeomakeStatColorTypeW gui=none guibg=#${col3} guifg=#${colbg} cterm=none ctermbg=$ccol3 ctermfg=$ccolbg
 
 " Markdown
 " --------

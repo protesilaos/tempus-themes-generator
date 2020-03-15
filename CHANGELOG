@@ -4,6 +4,12 @@ Changelog for Tempus Themes Generator
 Latest version is at the top. Versioning follows semver specs, with the
 date appended in the form of YYMMDD.
 
+1.4.0.20200315
+--------------
+
+Update the vim template.  This adds support for the `SignColumn' group
+as well as the groups provided by the GitGutter and Neomake packages.
+
 
 1.3.0.20190630
 --------------
