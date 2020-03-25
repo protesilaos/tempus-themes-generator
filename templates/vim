@@ -92,7 +92,7 @@ hi Debug guifg=#${col13} ctermfg=$ccol13
 " -----
 hi LineNr guibg=#${colbgalt} guifg=#${colfgalt} term=none ctermbg=$ccolbgalt ctermfg=$ccolfgalt
 hi Cursor guibg=#${colfg} guifg=#${colbg} ctermbg=$ccolfg ctermfg=$ccolbg
-hi CursorLine gui=none guibg=none term=none cterm=none ctermbg=none
+hi CursorLine gui=none guibg=#${colbgalt} term=none cterm=none ctermbg=$ccolbgalt
 hi CursorColumn gui=none guibg=#${colbgalt} term=none cterm=none ctermbg=$ccolbgalt
 hi CursorLineNr gui=bold guibg=#${colfgalt} guifg=#${colbg} cterm=bold ctermbg=$ccolfgalt ctermfg=$ccolbg
 hi ColorColumn guibg=#${colbgalt} guifg=#${colfg} term=none ctermbg=$ccolbgalt ctermfg=$ccolfg
