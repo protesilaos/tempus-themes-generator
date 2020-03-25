@@ -4,6 +4,12 @@ Changelog for Tempus Themes Generator
 Latest version is at the top. Versioning follows semver specs, with the
 date appended in the form of YYMMDD.
 
+1.5.0.20200325
+--------------
+
+Minor correction to the Vim template: a certain keyword was written in
+all uppercase letters, causing critical errors in `nvim 0.4.2'.
+
 1.4.0.20200315
 --------------
 
