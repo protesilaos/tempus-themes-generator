@@ -4,6 +4,13 @@ Changelog for Tempus Themes Generator
 Latest version is at the top. Versioning follows semver specs, with the
 date appended in the form of YYMMDD.
 
+1.6.0.20200329
+--------------
+
+Add new template for Roxterm.  The project was dormant for a while but
+its developer informed me that it is being actively maintained once
+again.
+
 1.5.1.20200325
 --------------
 

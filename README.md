@@ -17,6 +17,7 @@ The generator consists of a bash script which parses the sets of variables of ea
     - [GTK4 Source View](#gtk4-source-view)
     - [Kitty](#kitty)
     - [Konsole](#konsole)
+    - [Roxterm](#roxterm)
     - [Tilix](#tilix)
     - [URxvt (Rxvt-Unicode)](#urxvt-rxvt-unicode)
     - [Xterm](#xterm)
@@ -185,6 +186,27 @@ mkdir -p ~/.local/share/konsole/
 ```
 
 The theme will then be available from the profile preferences window under the "Appearance" tab.
+
+### Roxterm
+
+Roxterm stores its colour themes in two places:
+
+- System-wide at `/usr/share/roxterm/Config/Colours` (requires root).
+- Per-user at `~/.config/roxterm.sourceforge.net/Colours/`.
+
+Choose whatever option suits your needs. The following commands use the latter as an example.
+
+```sh
+# Create destination directory if it does not already exist
+mkdir -p ~/.config/roxterm.sourceforge.net/Colours
+
+# Generate the theme and place it in the created directory
+./tempus-themes-generator.sh winter roxterm > ~/.config/roxterm.sourceforge.net/Colours/tempus_winter
+```
+
+The theme will be available under the menubar's Preferences > Select
+Colour Scheme.  You might need to restart the application for changes to
+take effect.
 
 ### Tilix
 

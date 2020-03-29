@@ -1,0 +1,22 @@
+[roxterm colour scheme]
+palette_size=16
+0=#${col0}
+1=#${col1}
+2=#${col2}
+3=#${col3}
+4=#${col4}
+5=#${col5}
+6=#${col6}
+7=#${col7}
+8=#${col8}
+9=#${col9}
+10=#${col10}
+11=#${col11}
+12=#${col12}
+13=#${col13}
+14=#${col14}
+15=#${col15}
+background=#${colbg}
+foreground=#${colfg}
+cursor=#${colcr}
+cursorfg=#${colcr2}
