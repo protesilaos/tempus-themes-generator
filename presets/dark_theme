@@ -27,29 +27,43 @@ col08="$(rgb_to_hex "$col08rgb")"
 # -----------
 
 # HEX base values
-colbg="$col0"       # Background
-colbgalt="$col8"    # Background alternative
-colfg="$col15"      # Foreground
-colfgalt="$col7"    # Foreground alternative
-colcr="$col15"      # Cursor
-colcr2="$col0"      # Cursor text
+colbg="$col0"                   # Background
+colbgalt="$col8"                # Background alternative
+colfg="$col15"                  # Foreground
+colfgalt="$col7"                # Foreground alternative
+colcr="$col15"                  # Cursor
+colcr2="$col0"                  # Cursor text
 
 # RGB base values
-colbgrgb="$col0rgb"       # Background
-colbgaltrgb="$col8rgb"    # Background alternative
-colfgrgb="$col15rgb"      # Foreground
-colfgaltrgb="$col7rgb"    # Foreground alternative
-colcrrgb="$col15rgb"      # Cursor
-colcr2rgb="$col0rgb"      # Cursor text
+colbgrgb="$col0rgb"             # Background
+colbgaltrgb="$col8rgb"          # Background alternative
+colfgrgb="$col15rgb"            # Foreground
+colfgaltrgb="$col7rgb"          # Foreground alternative
+colcrrgb="$col15rgb"            # Cursor
+colcr2rgb="$col0rgb"            # Cursor text
+
+# HEX extra values
+colwarn="$col3"                 # underline warnings
+colerr="$col1"                  # underline errors
+colnote="$col2"                 # underline notes
+
+# RGB extra values
+colwarnrgb="$col3"              # underline warnings
+colerrrgb="$col1"               # underline errors
+colnotergb="$col2"              # underline notes
 
 # The following are specific to the Vim template
 # They should always reflect the above base values
-ccolbg="$ccol0"     # Console Background
-ccolbgalt="$ccol8"  # Console Background alternative
-ccolfg="$ccol15"    # Console Foreground
-ccolfgalt="$ccol7"  # Console Foreground alternative
-ccolcr="$ccol15"    # Console Cursor
+ccolbg="$ccol0"                 # Console Background
+ccolbgalt="$ccol8"              # Console Background alternative
+ccolfg="$ccol15"                # Console Foreground
+ccolfgalt="$ccol7"              # Console Foreground alternative
+ccolcr="$ccol15"                # Console Cursor
+
+ccolwarn="$ccol3"               # Console underline warnings
+ccolerr="$ccol1"                # Console underline errors
+ccolnote="$ccol2"               # Console underline notes
 
 # Special values
-colbgdim="$col08"   # In between col0 and col8
+colbgdim="$col08"               # In between col0 and col8
 

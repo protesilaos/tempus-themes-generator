@@ -4,6 +4,25 @@ Changelog for Tempus Themes Generator
 Latest version is at the top. Versioning follows semver specs, with the
 date appended in the form of YYMMDD.
 
+1.7.0.20200407
+--------------
+
+1. Specify extra variables for linter-related underlines.  This is done
+   in the "preset" data files.  No need to add conditional logic to the
+   templates.
+
+2. Implement the new underlines in the gtksourceview{3,4} templates.
+   For them the method is to colourise both the underline and the
+   affected text.
+
+3. Update the `vim' template accordingly.  This is done by extending
+   support to the highlight groups of "YouCompleteMe" and "Syntastic".
+   Here is a slight difference between GUI and Terminal versions: the
+   former has just a coloured curly underline, while the latter has an
+   underline with no further colour adjustments.  The idea is that the
+   linter's UI, its prominent indicators, will suffice as visual
+   feedback.
+
 1.6.0.20200329
 --------------
 

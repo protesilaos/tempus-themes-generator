@@ -5,22 +5,22 @@
 
 # Palette values corresponding to terminal codes followed by termcol
 # description.
-ccol0=0     # black
-ccol1=1     # red
-ccol2=2     # green
-ccol3=3     # yellow
-ccol4=4     # blue
-ccol5=5     # magenta
-ccol6=6     # cyan
-ccol7=7     # white
-ccol8=8     # brblack
-ccol9=9     # brred
-ccol10=10   # brgreen
-ccol11=11   # bryellow
-ccol12=12   # brblue
-ccol13=13   # brmagenta
-ccol14=14   # brcyan
-ccol15=15   # brwhite
+ccol0=0                         # black
+ccol1=1                         # red
+ccol2=2                         # green
+ccol3=3                         # yellow
+ccol4=4                         # blue
+ccol5=5                         # magenta
+ccol6=6                         # cyan
+ccol7=7                         # white
+ccol8=8                         # brblack
+ccol9=9                         # brred
+ccol10=10                       # brgreen
+ccol11=11                       # bryellow
+ccol12=12                       # brblue
+ccol13=13                       # brmagenta
+ccol14=14                       # brcyan
+ccol15=15                       # brwhite
 
 # Colour values (RGB)
 # ----------------------------
