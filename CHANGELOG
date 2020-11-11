@@ -4,6 +4,22 @@ Changelog for Tempus Themes Generator
 Latest version is at the top. Versioning follows semver specs, with the
 date appended in the form of YYMMDD.
 
+1.8.0.20201111
+--------------
+
+1. Add the 'g:tempus_enforce_background_color' option.  It sets the
+   background colour for Vim inside a terminal.  This is useful when the
+   application is ran in a terminal emulator that has a transparent
+   background.  By default, the themes do not set a background for such
+   cases, so as to conform with the transparent aesthetic.
+
+2. Configure the 16 colours used by default in Vim terminal windows when
+   using GUI mode with 'g:terminal_ansi_colors' or with 'termguicolors'
+   (e.g. when the terminal supports truecolor).  Same for the equivalent
+   Neovim parameters.
+
+Both changes by Frédéric Moulins <https://gitlab.com/fredericmoulins>.
+
 1.7.0.20200407
 --------------
 
