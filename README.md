@@ -319,6 +319,12 @@ syntax enable
 colorscheme tempus_winter
 ```
 
+By default, the theme does not set the background color when used in a terminal to play well with transparent terminals. The background color can be set by adding the following option in the `.vimrc`:
+
+```vim
+let g:tempus_enforce_background_color=1
+```
+
 **IMPORTANT.** Note that `tempus_winter` is the full name of the `winter` scheme as outputted by the generator. To avoid conflicts with any other themes that may exist, it is recommended that all Tempus schemes are declared in vim with `tempus_` prepended to their name.
 
 ## Roadmap (help is much appreciated)

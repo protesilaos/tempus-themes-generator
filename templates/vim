@@ -14,8 +14,13 @@ let g:colors_name = "${tempus_theme_name_slug_full_underscore}"
 
 " General
 " -------
-" NOTE the ctermbg=none is for terminals with transparency
-hi Normal guibg=#${colbg} guifg=#${colfg} ctermbg=none ctermfg=$ccolfg
+if exists("g:tempus_enforce_background_color")
+	hi Normal guibg=#${colbg} guifg=#${colfg} ctermbg=$ccolbg ctermfg=$ccolfg
+else
+	" NOTE the ctermbg=none is for terminals with transparency
+	hi Normal guibg=#${colbg} guifg=#${colfg} ctermbg=none ctermfg=$ccolfg
+endif
+
 hi Visual guibg=#${colfg} guifg=#${colbg} ctermbg=$ccolfg ctermfg=$ccolbg
 hi Search gui=underline,bold guibg=#${colbgalt} guifg=#${colfg} cterm=underline,bold ctermbg=$ccolbgalt ctermfg=$ccol3
 hi IncSearch gui=underline,bold guibg=#${colfgalt} guifg=#${colbg} term=none cterm=underline,bold ctermbg=$ccolfgalt ctermfg=$ccolbg
