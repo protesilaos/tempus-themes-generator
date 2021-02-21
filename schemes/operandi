@@ -1,0 +1,32 @@
+# vi: ft=sh
+
+# Meta data
+# ----------------------------
+tempus_theme_name='Operandi'
+tempus_theme_name_full='Modus Operandi'
+tempus_theme_name_slug='operandi'
+tempus_theme_name_slug_full='modus-operandi'
+tempus_theme_name_slug_full_underscore='modus_operandi'
+tempus_theme_description='SIMPLIFIED port of Modus Operandi'
+tempus_theme_wcag='WCAG AAA'
+tempus_theme_variant='light'
+tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
+
+# Colour values (HEX)
+# ----------------------------
+col0=000000        # black variant
+col1=a60000        # red variant
+col2=005e00        # green variant
+col3=813e00        # yellow variant
+col4=0031a9        # blue variant
+col5=721045        # magenta variant
+col6=00538b        # cyan variant
+col7=f0f0f0        # white variant
+col8=505050        # bright black variant
+col9=972500        # bright red variant
+col10=315b00       # bright green variant
+col11=70480f       # bright yellow variant
+col12=2544bb       # bright blue variant
+col13=8f0075       # bright magenta variant
+col14=005a5f       # bright cyan variant
+col15=ffffff       # bright white variant

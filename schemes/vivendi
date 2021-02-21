@@ -1,0 +1,32 @@
+# vi: ft=sh
+
+# Meta data
+# ----------------------------
+tempus_theme_name='Vivendi'
+tempus_theme_name_full='Modus Vivendi'
+tempus_theme_name_slug='vivendi'
+tempus_theme_name_slug_full='modus-vivendi'
+tempus_theme_name_slug_full_underscore='modus_vivendi'
+tempus_theme_description='SIMPLIFIED port of Modus Vivendi'
+tempus_theme_wcag='WCAG AAA'
+tempus_theme_variant='dark'
+tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
+
+# Colour values (HEX)
+# ----------------------------
+col0=000000       # black variant
+col1=ff8059       # red variant
+col2=44bc44       # green variant
+col3=eecc00       # yellow variant
+col4=2fafff       # blue variant
+col5=feacd0       # magenta variant
+col6=00d3d0       # cyan variant
+col7=a8a8a8       # white variant
+col8=181a20       # bright black variant
+col9=f4923b       # bright red variant
+col10=70c900      # bright green variant
+col11=cfdf30      # bright yellow variant
+col12=79a8ff      # bright blue variant
+col13=f78fe7      # bright magenta variant
+col14=6ae4b9      # bright cyan variant
+col15=ffffff      # bright white variant
