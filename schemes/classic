@@ -15,7 +15,7 @@ tempus_theme_author='Protesilaos Stavrou (https://protesilaos.com)'
 # Colour values (HEX)
 # ----------------------------
 col0=232323       # black variant
-col1=d2813d       # red variant
+col1=d4823d       # red variant
 col2=8c9e3d       # green variant
 col3=b1942b       # yellow variant
 col4=6e9cb0       # blue variant
