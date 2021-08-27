@@ -1,0 +1,32 @@
+# vi:ft=yaml
+colors:
+  name: '${tempus_theme_name_full}'
+  author: '${tempus_theme_author}'
+  description: '${tempus_theme_description}'
+  primary:
+    foreground: '#${colfg}'
+    background: '#${colbg}'
+  cursor:
+    text: '#${colcr2}'
+    cursor: '#${colcr}'
+  selection:
+    text: '#${colbg}'
+    background: '#${colfg}'
+  normal:
+    black: '#${col0}'
+    red: '#${col1}'
+    green: '#${col2}'
+    yellow: '#${col3}'
+    blue: '#${col4}'
+    magenta: '#${col5}'
+    cyan: '#${col6}'
+    white: '#${col7}'
+  bright:
+    black: '#${col8}'
+    red: '#${col9}'
+    green: '#${col10}'
+    yellow: '#${col11}'
+    blue: '#${col12}'
+    magenta: '#${col13}'
+    cyan: '#${col14}'
+    white: '#${col15}'
