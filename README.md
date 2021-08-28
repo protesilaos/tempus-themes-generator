@@ -15,6 +15,7 @@ The generator consists of a bash script which parses the sets of variables of ea
     - [Template-specific repositories](#template-specific-repositories)
     - [GTK3 Source View](#gtk3-source-view)
     - [GTK4 Source View](#gtk4-source-view)
+    - [Alacritty](#alacritty)
     - [Kitty](#kitty)
     - [Konsole](#konsole)
     - [Roxterm](#roxterm)
@@ -159,6 +160,34 @@ mkdir -p ~/.local/share/gtksourceview-4/styles/
 ```
 
 The theme will then be available from the supported app's preferences window.
+
+### Alacritty
+
+Alacritty has two ways to read themes: (i) directly from the
+configuration file, which is typically stored in
+`~/.config/alacritty/alacritty.yml`, or (ii) from another file which is
+imported into the configuration file.
+
+In the former case, users must manually copy the contents of their theme
+of choice into the file.  In the latter case, start by commenting out
+all colour-related options in `alacritty.yml`.  Replace them with:
+
+```yml
+import:
+  - ~/.config/alacritty/MY-TEMPUS-THEME.yml
+```
+
+Substitute `MY-TEMPUS-THEME` with the one of your choice.  To then get
+such a theme, we can use the following, using `tempus-winter` as an
+example:
+
+```sh
+# Store all the Tempus themes in a directory, inside the Alacritty setup
+mkdir -p ~/.config/alacritty/tempus-themes
+
+# Generate the desired theme and place it in the directory
+./tempus-themes-generator.sh winter alacritty > ~/.config/alacritty/tempus-themes/tempus_winter.yml
+```
 
 ### Kitty
 

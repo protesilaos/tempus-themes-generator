@@ -4,6 +4,12 @@ Changelog for Tempus Themes Generator
 Latest version is at the top. Versioning follows semver specs, with the
 date appended in the form of YYMMDD.
 
+2.1.0.20210828
+--------------
+
+Add template for the Alacritty terminal emulator.  Contributed by
+Antonio Hernández Blas (@nihilismus).
+
 2.0.0.20210514
 --------------
 
