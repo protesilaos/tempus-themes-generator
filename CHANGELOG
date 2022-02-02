@@ -4,6 +4,12 @@ Changelog for Tempus Themes Generator
 Latest version is at the top. Versioning follows semver specs, with the
 date appended in the form of YYMMDD.
 
+2.2.0.20220202
+--------------
+
+Add template for the Highlight utility.  Contributed by Anna Vyalkova
+(@cybertailor).
+
 2.1.0.20210828
 --------------
 
