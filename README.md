@@ -16,6 +16,7 @@ The generator consists of a bash script which parses the sets of variables of ea
     - [GTK3 Source View](#gtk3-source-view)
     - [GTK4 Source View](#gtk4-source-view)
     - [Alacritty](#alacritty)
+    - [Highlight](#highlight)
     - [Kitty](#kitty)
     - [Konsole](#konsole)
     - [Roxterm](#roxterm)
@@ -187,6 +188,16 @@ mkdir -p ~/.config/alacritty/tempus-themes
 
 # Generate the desired theme and place it in the directory
 ./tempus-themes-generator.sh winter alacritty > ~/.config/alacritty/tempus-themes/tempus_winter.yml
+```
+
+### Highlight
+
+Use `-s` flag directly or add it to the `HIGHLIGHT_OPTIONS` enironvment
+variable.
+
+```sh
+./tempus-themes-generator.sh winter highlight > tempus_winter.theme
+highlight -s tempus_winter.theme file
 ```
 
 ### Kitty
