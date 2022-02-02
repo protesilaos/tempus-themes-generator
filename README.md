@@ -196,7 +196,10 @@ Use `-s` flag directly or add it to the `HIGHLIGHT_OPTIONS` enironvment
 variable.
 
 ```sh
+# Generate the desired theme in the current directory
 ./tempus-themes-generator.sh winter highlight > tempus_winter.theme
+
+# Apply the theme
 highlight -s tempus_winter.theme file
 ```
 
