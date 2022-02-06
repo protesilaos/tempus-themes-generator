@@ -4,6 +4,11 @@ Changelog for Tempus Themes Generator
 Latest version is at the top. Versioning follows semver specs, with the
 date appended in the form of YYMMDD.
 
+2.3.0.20220206
+--------------
+
+Add template for Pygments.  Contributed by Anna Vyalkova (@cybertailor).
+
 2.2.0.20220202
 --------------
 

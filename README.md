@@ -19,6 +19,7 @@ The generator consists of a bash script which parses the sets of variables of ea
     - [Highlight](#highlight)
     - [Kitty](#kitty)
     - [Konsole](#konsole)
+    - [Pygments](#pygments)
     - [Roxterm](#roxterm)
     - [Tilix](#tilix)
     - [URxvt (Rxvt-Unicode)](#urxvt-rxvt-unicode)
@@ -229,6 +230,24 @@ mkdir -p ~/.local/share/konsole/
 ```
 
 The theme will then be available from the profile preferences window under the "Appearance" tab.
+
+### Pygments
+
+```sh
+# Generate the desired theme in the current directory
+./tempus-themes-generator.sh winter pygments > tempus_winter.py
+```
+
+```python
+from pygments import highlight
+from pygments.lexers import PythonLexer
+from pygments.formatters import HtmlFormatter
+
+from tempus_winter import TempusWinterStyle
+
+code = 'print("Hello World")'
+print(highlight(code, PythonLexer(), HtmlFormatter(style=TempusWinterStyle)))
+```
 
 ### Roxterm
 
